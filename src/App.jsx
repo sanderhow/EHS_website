@@ -40,6 +40,7 @@ function App() {
   }
       
   return (
+    <>
     <A.AppState>
       <BrowserRouter>
        <Navbar 
@@ -59,11 +60,11 @@ function App() {
          <Route path="/kontakt" element={<Kontakt />} />
        </Routes>
       </BrowserRouter>
-
-      <A.Footer>
-        © COPYRIGHT {new Date().getFullYear()}
-      </A.Footer>
     </A.AppState>
+    <A.Footer>
+      © COPYRIGHT {new Date().getFullYear()}
+    </A.Footer>
+    </>
   );
 }
 

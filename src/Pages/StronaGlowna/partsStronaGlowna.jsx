@@ -12,6 +12,7 @@ export const BackgroundImage = styled.img`
     opacity: 0.2; 
     background-size: cover;
 `
+
 export const Header = styled.div`
     font-size: 6.2rem;
     color: ${blackColor};
@@ -53,9 +54,11 @@ export const Offer = styled.ul`
       font-size: 0.5rem;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       left: 0%;
     }  
 `
+
 export const Avatar = styled.div`
     padding: 30px;
     font-size: 60px;

@@ -7,13 +7,20 @@ export const WrapperTrainings = styled.div`
 `
 
 export const TrainingBox = styled.div`
-    
+    display: block;
+    @media screen and (max-width: 1200px) {
+      font-size: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      left: 0%;
+    }
 `
 
 export const TrainingOffer = styled.div`
     display: flex;
     justify-content: center;
     padding: 30px 0 20px 0;
+ 
 `
 export const TrainingParagraph = styled.p`
     font-size: 1.3rem;

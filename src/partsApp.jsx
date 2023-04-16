@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { blackColor } from './utils/utils'
 
 export const AppState = styled.div`
-  min-height: 1000px;
+  min-height: 800px;
 `
 
 export const MainView = styled.div `  
@@ -32,3 +32,4 @@ export const Footer = styled.div`
   color: ${blackColor};
   font-size: 0.9rem;
 `
+

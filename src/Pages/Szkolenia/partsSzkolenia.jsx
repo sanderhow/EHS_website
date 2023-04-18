@@ -4,6 +4,14 @@ import { blackColor, orangeColor } from '../../utils/utils'
 export const WrapperTrainings = styled.div`
     display: flex;
     position: relative;
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 80px;
+    }
+    @media screen and (max-width: 700px) { 
+        margin: 0 20px;
+    }
 `
 
 export const TrainingBox = styled.div`
@@ -12,7 +20,6 @@ export const TrainingBox = styled.div`
       font-size: 0.5rem;
       display: flex;
       flex-direction: column;
-      left: 0%;
     }
 `
 
@@ -23,11 +30,16 @@ export const TrainingOffer = styled.div`
 `
 
 export const TrainingParagraph = styled.p`
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 50%;
-    font-family: 'Lora Bold700', serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
     font-weight: 600;
     line-break: strict;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        text-align: center;
+    }
 `
 
 export const HorizontalLine = styled.hr`
@@ -35,9 +47,9 @@ export const HorizontalLine = styled.hr`
 `
 
 export const TrainingText = styled.p`
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: "Alegreya Regular400", sans-serif;
-    line-height: 0.6cm;
+    line-height: 1.2;
     font-weight: normal;
 `
 

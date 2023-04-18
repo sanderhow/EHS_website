@@ -1,24 +1,39 @@
 import styled from 'styled-components';
-import { purpleColor } from '../../utils/utils';
+import { beigeColor, orangeColor, purpleColor } from '../../utils/utils';
 
 export const WrapperContact = styled.div`
     position: relative;
     display: flex;
+    background: ${orangeColor};
+    min-height: 1000px;
+    @media screen and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 export const WrapperContactInfo = styled.div`
     width: 50%;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
 `
 
 export const ContactHeader = styled.h3`
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     margin: 10% 30% 0 30%;
     font-family: 'Poppins', sans-serif;
-
+    @media screen and (max-width: 1200px) {
+        margin: 20px 5px 0 20px;
+    }
 `
 
 export const ContactInfo = styled.div`
-    font-size: 1.4rem;
     margin: 5% 30% 0 30%;
+    font-family: "Alegreya Regular400", sans-serif;
+    font-size: 1.2rem;
+    @media screen and (max-width: 1200px) {
+        margin: 0 20px;
+    }
 `
 export const ContactInfoHolder = styled.div`
     position: relative;
@@ -26,20 +41,21 @@ export const ContactInfoHolder = styled.div`
     table-layout: fixed;
     height: auto;
     width: 100%;
-    margin: 20px;
-    font-family: "Alegreya Regular400", sans-serif;
+    /* margin: 20px; */
+    /* font-family: "Alegreya Regular400", sans-serif; */
 `
 export const ContactIcon = styled.div`
     position: relative;
     display: table-cell;
-    width: 50px;
-    font-size: 1.4rem;
+    width: 35px;
+    font-size: 1.2rem;
     color: ${purpleColor};
 `
 
 export const ContactInfoElement = styled.p`
     position: relative;
     display: table-cell;
+    line-height: 1.8;
 `
 
 // export const Avatar = styled.div`
@@ -50,7 +66,10 @@ export const ContactInfoElement = styled.p`
 
 export const WrapperContactForm = styled.div`
     max-width: 1270px;
-    margin-top: 5%;
+    /* margin-top: 5%; */
+    @media screen and (max-width: 1200px) {
+        margin: 20px 35px;   
+    }
 `
 
 // export const ContactForm = styled.div`

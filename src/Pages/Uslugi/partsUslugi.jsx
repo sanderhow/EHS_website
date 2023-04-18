@@ -2,10 +2,14 @@ import styled from 'styled-components'
 
 export const ServicesWrapper = styled.div`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 export const Header = styled.h1`
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
 `
 
 export const AvatarUslugi = styled.img`
@@ -21,23 +25,24 @@ export const ServiceOfferWrapper = styled.div`
     line-height: 23px;
     position: relative;
     display: inline-block;
-    left: 20px;
     @media screen and (max-width: 700px) {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
         padding: 0;
+        width: auto;
+        margin: 0 20px;
     }   
 `
 
 export const ServiceOffer = styled.ul`
-    font-size: 1.7rem;
-    left: 10px;
+    padding: 0;
+    font-size: 2.1rem;
+    font-family: 'Poppins', sans-serif;
 `
 
 export const ServiceList = styled.li`
-    
+    font-family: "Alegreya Regular400", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
 
 `
 

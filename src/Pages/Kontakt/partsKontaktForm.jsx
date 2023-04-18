@@ -12,8 +12,9 @@ export const ContactFormContainer = styled.div`
             padding: 1em; 
         }
         
-        @media (min-width: 700px) {
+        @media (min-width: 1200px) {
             display: grid; 
+            margin: 20px 0 35px;
             grid-template-columns: 1fr 2fr; 
             > * {
                 padding: 2em; 
@@ -46,16 +47,20 @@ export const WrappedGrid = styled.div`
 export const ContactLabel = styled.label`
      display: block; 
      font-family: "Alegreya Regular400", sans-serif;
+     font-size: 1rem;
+     padding-top: 20px;
 `
 
 export const Input = styled.input`
     border: 1px solid #E6343B; 
     padding: 1em; 
     width: 100%; 
+    background-color: ${orangeColor};
 `
 
 export const TextArea = styled.textarea`
     border: 1px solid #E6343B; 
+    background-color: ${orangeColor};
     padding: 1em; 
     width: 100%; 
 `

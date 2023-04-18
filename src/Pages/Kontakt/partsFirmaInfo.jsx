@@ -5,7 +5,6 @@ export const WrapperCompanyInfo = styled.div`
     background: ${purpleColor};
     padding: 10px;
     width: 100%;
-    /* text-align: center; */
 ` 
 
 export const CompanyName = styled.h3`
@@ -25,7 +24,8 @@ export const WrapperList = styled.ul`
     padding:0;
     text-align: center;
     font-family: "Alegreya Regular400", sans-serif;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.4;
     @media (min-width: 700px) {
     text-align: left; 
     }

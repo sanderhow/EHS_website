@@ -16,7 +16,7 @@ export const BackgroundImage = styled.img`
 export const Header = styled.div`
     font-size: 6.2rem;
     color: ${blackColor};
-    font-family: 'Alegreya Sans Bold700', sans-serif;
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     width: 300px;
     top: 5%;
@@ -44,11 +44,12 @@ export const Offer = styled.ul`
     display: flex;
     justify-content: center;
     padding-left: 0;
+
    
     @media screen and (max-width: 1024px) {
       font-size: 0.7rem;
       display: flex;
-      justify-content: center;
+      align-items: center;
     }
     @media screen and (max-width: 700px) {
       font-size: 0.5rem;

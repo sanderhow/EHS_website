@@ -20,8 +20,8 @@ export const TrainingOffer = styled.div`
     display: flex;
     justify-content: center;
     padding: 30px 0 20px 0;
- 
 `
+
 export const TrainingParagraph = styled.p`
     font-size: 1.3rem;
     width: 50%;
@@ -32,7 +32,6 @@ export const TrainingParagraph = styled.p`
 
 export const HorizontalLine = styled.hr`
     color: ${blackColor};
-
 `
 
 export const TrainingText = styled.p`

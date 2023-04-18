@@ -6,7 +6,7 @@ function Firma() {
   <>
   <P.CompanyWrapper>
     {/* <P.CompanyHeader>Wybierz</P.CompanyHeader> */}
-    <P.CompanyHeaderLogo>SM Group</P.CompanyHeaderLogo>
+    <P.CompanyHeaderLogo>SM Safety Group</P.CompanyHeaderLogo>
     <P.CompanyWrapperText>
       <P.WrapperText>Jesteśmy solidnym partnerem biznesowym 
       nastawionym na długofalowe relacje i współpracę.

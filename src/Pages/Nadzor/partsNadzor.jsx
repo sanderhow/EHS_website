@@ -75,7 +75,7 @@ export const LeftContainerOutsourcingOffer = styled.div`
 export const LeftContainerHeader = styled.h3`
     font-family: 'Poppins', sans-serif;
     font-size: 1.9rem;
-    height: 114px;
+    margin-bottom: 50px;
 `
 export const LeftContainerParagraph = styled.p`
     font-family: "Alegreya Regular400", sans-serif;

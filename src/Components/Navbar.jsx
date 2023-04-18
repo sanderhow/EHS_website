@@ -31,7 +31,7 @@ function Navbar(props) {
           Stały nadzór BHP
         </P.MenuLink>
         <P.MenuLink to="/firma" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
-          O firmie
+          O nas
         </P.MenuLink>
         <P.MenuLink to="/kontakt" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
           Kontakt
@@ -56,7 +56,7 @@ function Navbar(props) {
           Stały nadzór BHP
         </P.MenuLink>
         <P.MenuLink to="/firma" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
-          O firmie
+          O nas
         </P.MenuLink>
         <P.MenuLink to="/kontakt" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
           Kontakt

@@ -30,6 +30,9 @@ function Navbar(props) {
         <P.MenuLink to="/nadzor" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
           Stały nadzór BHP
         </P.MenuLink>
+        <P.MenuLink to="/cennik" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
+          Cennik
+        </P.MenuLink>
         <P.MenuLink to="/firma" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
           O nas
         </P.MenuLink>
@@ -57,6 +60,9 @@ function Navbar(props) {
         </P.MenuLink>
         <P.MenuLink to="/firma" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
           O nas
+        </P.MenuLink>
+        <P.MenuLink to="/cennik" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
+          Cennik
         </P.MenuLink>
         <P.MenuLink to="/kontakt" activeStyle onMouseOver={props.HoverOn} onMouseLeave={props.LeaveHover}>
           Kontakt

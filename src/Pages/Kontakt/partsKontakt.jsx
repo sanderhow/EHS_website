@@ -41,8 +41,6 @@ export const ContactInfoHolder = styled.div`
     table-layout: fixed;
     height: auto;
     width: 100%;
-    /* margin: 20px; */
-    /* font-family: "Alegreya Regular400", sans-serif; */
 `
 export const ContactIcon = styled.div`
     position: relative;

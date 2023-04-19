@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ServicesWrapper = styled.div`
     position: relative;
@@ -6,10 +6,15 @@ export const ServicesWrapper = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
 export const Header = styled.h1`
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2.1rem;
+    @media screen and (max-width: 1200px) {
+        line-height: 1.1;
+        font-size: 1.8rem;
+    }
 `
 
 export const AvatarUslugi = styled.img`
@@ -37,12 +42,16 @@ export const ServiceOffer = styled.ul`
     padding: 0;
     font-size: 2.1rem;
     font-family: 'Poppins', sans-serif;
+    @media screen and (max-width: 1200px) {
+        line-height: 1;
+        font-size: 1.8rem;
+    }
 `
 
 export const ServiceList = styled.li`
     font-family: "Alegreya Regular400", sans-serif;
     font-size: 1.2rem;
     line-height: 1.4;
-
 `
+
 

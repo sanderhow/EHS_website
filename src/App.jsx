@@ -8,6 +8,7 @@ import Nadzor from "./Pages/Nadzor/Nadzor"
 import Firma from "./Pages/Firma/Firma";
 import Kontakt from "./Pages/Kontakt/Kontakt";
 import Navbar from "./Components/Navbar";
+import Cennik from "./Pages/Cennik/Cennik";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -56,8 +57,10 @@ function App() {
          <Route path="/uslugi" element={<Uslugi />} />
          <Route path="/szkolenia" element={<Szkolenia />} />
          <Route path="/nadzor" element={<Nadzor />} />
+         <Route path="/cennik" element={<Cennik />} />
          <Route path="/firma" element={<Firma />} />
          <Route path="/kontakt" element={<Kontakt />} />
+      
        </Routes>
       </BrowserRouter>
     </A.AppState>

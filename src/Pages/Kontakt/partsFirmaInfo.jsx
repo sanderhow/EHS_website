@@ -30,4 +30,4 @@ export const WrapperList = styled.ul`
     text-align: left; 
     }
 `
- 
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import * as P from "././partsAnalizaWypadkowa";
+import * as P from "././partsCennikKategorie";
 
 function AnalizaWypadkowa() {
   return (
@@ -43,3 +43,4 @@ function AnalizaWypadkowa() {
 </>
 )}
   export default AnalizaWypadkowa;
+  

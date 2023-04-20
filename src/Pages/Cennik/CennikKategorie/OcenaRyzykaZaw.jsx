@@ -1,5 +1,5 @@
 import React from 'react';
-import * as P from "././partsOcenaRyzykaZaw";
+import * as P from "././partsCennikKategorie";
 
 function OcenaRyzykaZaw() {
   return (
@@ -43,3 +43,4 @@ function OcenaRyzykaZaw() {
 </>
 )}
   export default OcenaRyzykaZaw;
+  

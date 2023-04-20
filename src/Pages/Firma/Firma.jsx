@@ -1,9 +1,11 @@
 import React from 'react';
 import * as P from "./partsFirma";
+import ParallaxBackground from '../../Components/ParallaxBackground/ParallaxBackground';
 
 function Firma() {
   return (
   <>
+  <ParallaxBackground src={'assets/onas.jpg'} label={'O nas'}/>
   <P.CompanyWrapper>
     {/* <P.CompanyHeader>Wybierz</P.CompanyHeader> */}
     <P.CompanyHeaderLogo>SM Safety Group</P.CompanyHeaderLogo>

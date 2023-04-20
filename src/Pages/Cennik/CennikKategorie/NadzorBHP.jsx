@@ -1,5 +1,5 @@
 import React from 'react';
-import * as P from "././partsNadzorBHP";
+import * as P from "././partsCennikKategorie";
 
 function NadzorBHP() {
   return (
@@ -43,3 +43,4 @@ function NadzorBHP() {
 </>
 )}
   export default NadzorBHP;
+  

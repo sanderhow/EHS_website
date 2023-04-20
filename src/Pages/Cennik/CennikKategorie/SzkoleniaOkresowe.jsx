@@ -1,5 +1,5 @@
 import React from 'react';
-import * as P from "./partsSzkoleniaOkresowe";
+import * as P from "./partsCennikKategorie";
 
 function SzkoleniaOkresowe() {
 return (

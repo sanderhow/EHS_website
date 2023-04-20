@@ -11,6 +11,7 @@ export const Header = styled.h1`
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2.1rem;
+    margin-top: 40px;
     @media screen and (max-width: 1200px) {
         line-height: 1.1;
         font-size: 1.8rem;

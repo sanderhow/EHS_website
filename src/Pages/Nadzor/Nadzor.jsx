@@ -1,17 +1,11 @@
 import React from 'react';
 import * as P from "./partsNadzor";
+import ParallaxBackground from '../../Components/ParallaxBackground/ParallaxBackground';
 
 function Nadzor() {
   return (
     <>
-      <P.ParallaxWrapper>
-        <P.ParallaxLayer1/>
-        <P.ParallaxLayer2>
-          <P.ControlHeader>
-          Stały nadzór BHP 
-         </P.ControlHeader>
-        </P.ParallaxLayer2>
-      </P.ParallaxWrapper> 
+      <ParallaxBackground src={'assets/nadzor.jpg'} label={'Nadzór BHP'}/>
       
       <P.Outsourcing>
         <P.OutsourcingHeader>Outsourcing BHP</P.OutsourcingHeader>

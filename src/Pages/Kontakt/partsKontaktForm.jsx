@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import { orangeColor, purpleColor } from '../../utils/utils';
+import { beigeColor, orangeColor, purpleColor } from '../../utils/utils';
 import { css } from 'styled-components';
 
 export const ContactFormContainer = styled.div`
     margin-left: auto; 
     margin-right: auto;
+    margin-top: 60px;
     max-width: 1170px;  
     ${props => props.wrapper && css`
         box-shadow: 0 0 20px 0 ${purpleColor};
@@ -48,19 +49,19 @@ export const ContactLabel = styled.label`
      display: block; 
      font-family: "Alegreya Regular400", sans-serif;
      font-size: 1rem;
-     padding-top: 20px;
+     padding: 20px 0 5px;
 `
 
 export const Input = styled.input`
     border: 1px solid #E6343B; 
     padding: 1em; 
     width: 100%; 
-    background-color: ${orangeColor};
+    background-color: white;
 `
 
 export const TextArea = styled.textarea`
     border: 1px solid #E6343B; 
-    background-color: ${orangeColor};
+    background-color: white;
     padding: 1em; 
     width: 100%; 
 `

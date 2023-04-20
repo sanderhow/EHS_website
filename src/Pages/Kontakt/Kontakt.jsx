@@ -1,10 +1,13 @@
 import React from 'react';
 import FirmaInfo from './FirmaInfo';
 import KontaktForm from './KontaktForm';
+import ParallaxBackground from "../../Components/ParallaxBackground/ParallaxBackground";
 import * as P from './partsKontakt';
 
 function Kontakt() {
   return (
+<>
+  <ParallaxBackground src={'assets/kontakt.jpg'} label={'Kontakt'}/>
   <P.WrapperContact>
     <P.WrapperContactInfo>
       <P.ContactHeader>
@@ -49,11 +52,12 @@ function Kontakt() {
 
     <P.WrapperContactForm>
       {/* <P.ContactForm> */}
-        <FirmaInfo/>
+        {/* <FirmaInfo/> */}
         <KontaktForm/>
       {/* </P.ContactForm> */}
     </P.WrapperContactForm>
   </P.WrapperContact>
+</>
 )}
 
 export default Kontakt;

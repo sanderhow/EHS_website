@@ -1,8 +1,11 @@
 import React from 'react';
 import * as P from "./partsUslugi";
+import ParallaxBackground from '../../Components/ParallaxBackground/ParallaxBackground';
 
 function Uslugi() {
   return (
+<>
+  <ParallaxBackground src={'assets/uslugiglowna.jpg'} label={'Usługi'}/> 
   <P.ServicesWrapper>
     <P.Header>Kompleksowa obsługa BHP i PPOŻ. </P.Header>
     <P.AvatarUslugi img src='assets/uslugi.jpg'/>
@@ -37,7 +40,7 @@ function Uslugi() {
         </P.ServiceList>
       </P.ServiceOfferWrapper>
 </P.ServicesWrapper>
+</>
 )}
 
 export default Uslugi;
-

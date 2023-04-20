@@ -1,24 +1,22 @@
 import React from 'react';
-import * as P from "./partsCennikKategorie";
-// import SzkoleniaO from './partsSzkoleniaOkresowe';
+import * as P from "././CennikKategorie/partsCennikKategorie";
 
-function SzkoleniaWstepne() {
-  return (
-<>
-{/* <P.TrainingWrapper> */}
-    <P.PriceCardTitle>
-        <P.PriceCardHeader>Administracyjne</P.PriceCardHeader>
+function GlownaCennik() {
+      return (
+    <>
+        <P.PriceCardTitle>
+        <P.PriceCardHeader>Cennik</P.PriceCardHeader>
     </P.PriceCardTitle>
     <P.PriceCardWrapper>
         <P.Card>
             <P.CardHeader3>
-                Administracyjne stacjonarne
+                Postępowanie powypadkowe
             </P.CardHeader3>
             <P.CardHeader1>
-                od 70zł
+                od 350zł
             </P.CardHeader1>
             <P.CardParagraph>
-                Do 15 osób
+                1 szt.
             </P.CardParagraph>
             <P.CardButton>
                 Zamawiam
@@ -26,106 +24,78 @@ function SzkoleniaWstepne() {
         </P.Card>
         <P.Card>
             <P.CardHeader3>
-                Administracyjne on-line
-            </P.CardHeader3>
-            <P.CardHeader1>
-                od 60zł
-            </P.CardHeader1>
-            <P.CardParagraph>
-                Do 7 osób
-            </P.CardParagraph>
-            <P.CardButton>
-                Zamawiam
-            </P.CardButton>
-        </P.Card> 
-    </P.PriceCardWrapper>
-
-        
-    <P.PriceCardTitle>
-        <P.PriceCardHeader>Robotnicze</P.PriceCardHeader>
-    </P.PriceCardTitle>
-        
-    <P.PriceCardWrapper>
-        <P.Card>
-            <P.CardHeader3>
-                Robotnicze stacjonarne
-            </P.CardHeader3>
-            <P.CardHeader1>
-                od 70zł
-            </P.CardHeader1>
-            <P.CardParagraph>
-                1-5 osób
-            </P.CardParagraph>
-            <P.CardButton>
-                Zamawiam
-            </P.CardButton>
-        </P.Card>
-        <P.Card>
-            <P.CardHeader3>
-                Robotnicze stacjonarne
-            </P.CardHeader3>
-            <P.CardHeader1>
-                od 60zł
-            </P.CardHeader1>
-            <P.CardParagraph>
-                6-10 osób
-            </P.CardParagraph>
-            <P.CardButton>
-                Zamawiam
-            </P.CardButton>
-        </P.Card> 
-        <P.Card>
-            <P.CardHeader3>
-                Robotnicze stacjonarne
-            </P.CardHeader3>
-            <P.CardHeader1>
-                od 50zł
-            </P.CardHeader1>
-            <P.CardParagraph>
-                11 osób i więcej
-            </P.CardParagraph>
-            <P.CardButton>
-                Zamawiam
-            </P.CardButton>
-        </P.Card> 
-    </P.PriceCardWrapper>
-
-    <P.PriceCardTitle>
-        <P.PriceCardHeader>Kierownicze</P.PriceCardHeader>
-    </P.PriceCardTitle>
-
-    <P.PriceCardWrapper>
-        <P.Card>
-            <P.CardHeader3>
-                Kierownicze stacjonarne
-            </P.CardHeader3>
-            <P.CardHeader1>
-                od 90zł
-            </P.CardHeader1>
-            <P.CardParagraph>
-                Do 10 osób
-            </P.CardParagraph>
-            <P.CardButton>
-                Zamawiam
-            </P.CardButton>
-        </P.Card>
-        <P.Card>
-            <P.CardHeader3>
-                Kierownicze on-line
+                Instrukcja BHP
             </P.CardHeader3>
             <P.CardHeader1>
                 od 80zł
             </P.CardHeader1>
             <P.CardParagraph>
-                Do 5 osób
+                1 szt.
             </P.CardParagraph>
             <P.CardButton>
                 Zamawiam
             </P.CardButton>
         </P.Card> 
+        <P.Card>
+            <P.CardHeader3>
+                Ocena ryzyka zawodowego
+            </P.CardHeader3>
+            <P.CardHeader1>
+                od 110zł
+            </P.CardHeader1>
+            <P.CardParagraph>
+                1 szt.
+            </P.CardParagraph>
+            <P.CardButton>
+                Zamawiam
+            </P.CardButton>
+        </P.Card>
     </P.PriceCardWrapper>
-{/* // </P.TrainingWrapper> */}
-</>
-)}
-  export default SzkoleniaWstepne;
-  
+    <P.PriceCardWrapper>
+        <P.Card>
+            <P.CardHeader3>
+                Stały nadzór BHP
+            </P.CardHeader3>
+            <P.CardHeader1>
+                od 330zł
+            </P.CardHeader1>
+            <P.CardParagraph>
+                1 szt.
+            </P.CardParagraph>
+            <P.CardButton>
+                Zamawiam
+            </P.CardButton>
+        </P.Card> 
+        <P.Card>
+            <P.CardHeader3>
+                Audyt BHP
+            </P.CardHeader3>
+            <P.CardHeader1>
+                od 400zł
+            </P.CardHeader1>
+            <P.CardParagraph>
+                miesięcznie
+            </P.CardParagraph>
+            <P.CardButton>
+                Zamawiam
+            </P.CardButton>
+        </P.Card> 
+        <P.Card>
+            <P.CardHeader3>
+                Uśmiech i dobre słowo :)
+            </P.CardHeader3>
+            <P.CardHeader1>
+                0 zł
+            </P.CardHeader1>
+            <P.CardParagraph>
+                
+            </P.CardParagraph>
+            <P.CardButton>
+                Zamawiam
+            </P.CardButton>
+        </P.Card>
+    </P.PriceCardWrapper>
+    </>
+      )}
+
+export default GlownaCennik;

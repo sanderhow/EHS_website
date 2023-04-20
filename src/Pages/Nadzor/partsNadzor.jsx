@@ -2,46 +2,6 @@ import styled from 'styled-components'
 import { blackColor } from '../../utils/utils';
 
 
-export const ParallaxWrapper = styled.div`
-    height: 300px;
-    perspective: 1px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-`
-
-export const ParallaxLayer1 = styled.div`
-    position: absolute;
-    width: 100%;
-    min-height: 330px;
-    background-image: url('assets/nadzor.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    @media screen and (max-width: 700px) {
-        min-height: 280px;
-    }
-`
-
-export const ParallaxLayer2 = styled.div`
-    position: absolute;
-    display: flex;
-    align-items: center;
-    height: 300px;
-`
-
-export const ControlHeader = styled.h3`
-    font-family: 'Poppins', sans-serif;
-    font-size: 4.1rem;
-    position: relative;
-    margin: 0;
-    color: white;
-    @media screen and (max-width: 700px) {
-        text-align: center;
-        font-size: 2.7rem;
-    }
-`
 
 export const Outsourcing = styled.div`
     position: relative;

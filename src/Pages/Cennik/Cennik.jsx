@@ -1,49 +1,36 @@
 import React, {useState} from 'react';
 import * as P from "./partsCennik";
-import SzkoleniaWstepne from "./CennikKategorie/SzkoleniaWstepne"
-import SzkoleniaOkresowe from './CennikKategorie/SzkoleniaOkresowe';
-import AnalizaWypadkowa from './CennikKategorie/AnalizaWypadkowa';
-import OcenaRyzykaZaw from "././CennikKategorie/OcenaRyzykaZaw";
-import NadzorBHP from './CennikKategorie/NadzorBHP';
+import ParallaxBackground from '../../Components/ParallaxBackground/ParallaxBackground';
+import { getCategory, PriceCategory } from './utils';
 
 function Cennik() {
-const [category, setCategory] = useState("");
+const [category, setCategory] = useState(PriceCategory.Wstepne);
 
   return (
 <>
-    <P.ParallaxWrapperPrice>
-        <P.ParallaxLayer1Price/>
-        <P.ParallaxLayer2Price>
-          <P.ControlHeaderPrice>
-            Cennik 
-         </P.ControlHeaderPrice>
-        </P.ParallaxLayer2Price>
-      </P.ParallaxWrapperPrice> 
-
+    
+    <ParallaxBackground src={'assets/cennik.jpg'} label={'Cennik'}/>
 
     <P.PriceButtonsWrapper>
-        <P.PriceButton onClick={() => setCategory('wstepneBHP')}>
+        <P.PriceButton isActive={category === PriceCategory.Wstepne}  onClick={() => setCategory(PriceCategory.Wstepne)}>
             Szkolenia wstępne BHP
         </P.PriceButton>
-        <P.PriceButton onClick={() => setCategory('okresoweBHP')}>
+        <P.PriceButton isActive={category === PriceCategory.Okresowe} onClick={() => setCategory(PriceCategory.Okresowe)}>
             Szkolenia okresowe BHP
         </P.PriceButton>
-        <P.PriceButton onClick={() => setCategory('analizaA3')}>
+        <P.PriceButton isActive={category === PriceCategory.AnalizaA3} onClick={() => setCategory(PriceCategory.AnalizaA3)}>
             Szkolenia z analizy wypadkowej/A3
         </P.PriceButton>
-        <P.PriceButton onClick={() => setCategory('ocenaRyzyka')}>
+        <P.PriceButton isActive={category === PriceCategory.OcenaRyzyka} onClick={() => setCategory(PriceCategory.OcenaRyzyka)}>
             Ocena ryzyka zawodowego
         </P.PriceButton>
-        <P.PriceButton onClick={() => setCategory('nadzorBHP')}>
+        <P.PriceButton isActive={category === PriceCategory.Nadzor} onClick={() => setCategory(PriceCategory.Nadzor)}>
             Stały nadzór BHP
         </P.PriceButton>
     </P.PriceButtonsWrapper>
     
-    {category === 'wstepneBHP' && <SzkoleniaWstepne/>}
-    {category === 'okresoweBHP' && <SzkoleniaOkresowe/>}
-    {category === 'analizaA3' && <AnalizaWypadkowa/>}
-    {category === 'ocenaRyzyka' && <OcenaRyzykaZaw/>}
-    {category === 'nadzorBHP' && <NadzorBHP/>}
+   {getCategory(category)}
+
     <P.PriceWrapperLaw>
         <P.PriceParagraphLaw>
             * zgodnie z obowiązującymi przepisami prawa podatkowego, Kształcenie zawodowe - Szkolenia BHP pracowników (zgodnie z art.43 ust.1ptk.29a), są zwolnione z podatku VAT.
@@ -53,3 +40,4 @@ const [category, setCategory] = useState("");
 )}
 
 export default Cennik;
+

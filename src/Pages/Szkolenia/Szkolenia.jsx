@@ -1,8 +1,11 @@
 import React from 'react';
 import * as P from "./partsSzkolenia";
+import ParallaxBackground from "../../Components/ParallaxBackground/ParallaxBackground";
 
 function Szkolenia() {
   return (
+  <>
+    <ParallaxBackground src={'assets/szkolenia.jpg'} label={'Szkolenia'}/>
     <P.WrapperTrainings>
       <P.TrainingBox>
         <P.TrainingOffer>
@@ -52,8 +55,8 @@ function Szkolenia() {
         </P.TrainingOffer>
       </P.TrainingBox>
     </P.WrapperTrainings>
-  )
-}
+  </>
+  )}
 
 export default Szkolenia;
 

@@ -6,21 +6,22 @@ export const Wrapper = styled.div`
 `
 
 export const BackgroundImage = styled.img`
-    background-image: url("./assets/leadership-photo.jpg");
+    background-image: url("./assets/stronaglowna.jpg");
     height: 100vh;
     width: 100%;
-    opacity: 0.2; 
+    /* opacity: 0.8;  */
     background-size: cover;
 `
 
 export const Header = styled.div`
-    font-size: 6.2rem;
-    color: ${blackColor};
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: white;
     font-family: 'Poppins', sans-serif;
     position: absolute;
     width: 300px;
-    top: 5%;
-    left: 10%;
+    top: 100px;
+    left: 20px;
     line-height: 1.2;
 
     @media screen and (max-width: 1024px) {

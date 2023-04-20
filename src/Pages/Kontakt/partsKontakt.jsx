@@ -4,7 +4,7 @@ import { beigeColor, orangeColor, purpleColor } from '../../utils/utils';
 export const WrapperContact = styled.div`
     position: relative;
     display: flex;
-    background: ${orangeColor};
+    background: white;
     min-height: 1000px;
     @media screen and (max-width: 1200px) {
         display: flex;

@@ -12,7 +12,7 @@ export const WrapperContact = styled.div`
     }
 `
 export const WrapperContactInfo = styled.div`
-    width: 50%;
+    width: 60%;
     @media screen and (max-width: 1200px) {
         width: 100%;
     }

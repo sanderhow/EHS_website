@@ -14,7 +14,7 @@ export const PriceCardWrapper = styled.div`
 
 export const Card = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    width: 300px;
     text-align: center;
     padding: 70px;
     margin: 0 25px 30px 20px;

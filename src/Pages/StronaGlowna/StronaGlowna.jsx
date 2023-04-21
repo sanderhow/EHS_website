@@ -1,13 +1,24 @@
 import React from 'react'
+import { Carousel, CarouselItem } from './Carousel';
 import * as P from "./partsStronaGlowna";
 
-function StronaGlowna() {
+const StronaGlowna = () => {
   return (
   <P.Wrapper>
     <P.BackgroundImage/>
     <P.Header>
       Poprawa bezpieczeństwa wymaga przywództwa
     </P.Header>
+
+    <P.WrapperDeclaration>
+      <P.HeaderDeclaration>
+        To Czas, By Rozwinąć Twój Biznes
+      </P.HeaderDeclaration>
+      <P.ParagraphDeclaration>
+        Od konsultacji, az po stały nadzór BHP, oferujemy kompleksową obsługę Twojej firmy.
+      </P.ParagraphDeclaration>
+    </P.WrapperDeclaration>
+
     <P.OfferWrapper>
       <P.Offer>
         <P.OfferItem>
@@ -28,7 +39,7 @@ function StronaGlowna() {
           <P.OfferParagraph>
             Posiadamy kilkunastoletnie
             doświadczenie w branzy, regularnie podnoszac swoje kwalifikacje, w oparciu o zmieniajace sie
-            przepisy prawa i trendy na rynku. Wspolpracujemy z prawniakmi i certyfikowanymi labolatoriami.
+            przepisy prawa i trendy na rynku.
           </P.OfferParagraph>
         </P.OfferItem>
         
@@ -36,7 +47,7 @@ function StronaGlowna() {
           <P.Avatar>
           <i class="fa-solid fa-envelope"></i>
           </P.Avatar>
-            Zaufanie
+            Gwarantowane zaufanie
           <P.OfferParagraph>
             Zapewniane usługi wykonywane sa na najwyzszym poziomie. 
             Do kazdego klienta podchodzimy indywidualnie. 
@@ -46,6 +57,54 @@ function StronaGlowna() {
         </P.OfferItem>
       </P.Offer>
     </P.OfferWrapper>
+    <Carousel>
+      <CarouselItem>
+        <P.CarouselTextWrapper>
+          <P.CarouselItemHeder>
+            Amazon
+            <P.CarouselAvatar src={'assets/amazon.jpg'}/>
+          </P.CarouselItemHeder>
+          <P.CarouselItemParagraph>
+          Firma "SM group" dała się poznać jako rzetelny partner dostosowujący  */
+           się do potrzeb naszej firmy i wspierający w przypadku sytuacji  
+           niezaplanowanych. "Usługi BHP 24" to profesjonaliści z szerokim zakresem wiedzy i doświadczeniem w zakresie bezpieczeństwa i higieny pracy. 
+        </P.CarouselItemParagraph>
+        <P.CarouselItemSignature>
+          Magdalena Kodybo, Kierownik Serwisu
+        </P.CarouselItemSignature>
+      </P.CarouselTextWrapper>
+      </CarouselItem>
+      <CarouselItem>
+      <P.CarouselTextWrapper>
+      <P.CarouselItemHeder>
+            Referencje2
+          </P.CarouselItemHeder>
+          <P.CarouselItemParagraph>
+          Firma "SM group" dała się poznać jako rzetelny partner dostosowujący  */
+           się do potrzeb naszej firmy i wspierający w przypadku sytuacji  
+           niezaplanowanych. "Usługi BHP 24" to profesjonaliści z szerokim zakresem wiedzy i doświadczeniem w zakresie bezpieczeństwa i higieny pracy. 
+        </P.CarouselItemParagraph>
+        <P.CarouselItemSignature>
+          Magdalena Kodybo, Kierownik Serwisu
+        </P.CarouselItemSignature>
+        </P.CarouselTextWrapper>
+      </CarouselItem>
+      <CarouselItem>
+      <P.CarouselTextWrapper>
+      <P.CarouselItemHeder>
+            Referencje3
+          </P.CarouselItemHeder>
+          <P.CarouselItemParagraph>
+          Firma "SM group" dała się poznać jako rzetelny partner dostosowujący  */
+           się do potrzeb naszej firmy i wspierający w przypadku sytuacji  
+           niezaplanowanych. "Usługi BHP 24" to profesjonaliści z szerokim zakresem wiedzy i doświadczeniem w zakresie bezpieczeństwa i higieny pracy. 
+        </P.CarouselItemParagraph>
+        <P.CarouselItemSignature>
+          Magdalena Kodybo, Kierownik Serwisu
+        </P.CarouselItemSignature>
+        </P.CarouselTextWrapper>
+      </CarouselItem>
+    </Carousel>
   </P.Wrapper>
   )}
 

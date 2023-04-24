@@ -61,13 +61,13 @@ const StronaGlowna = () => {
       <CarouselItem>
         <P.CarouselTextWrapper>
           <P.CarouselItemHeder>
-            Amazon
-            <P.CarouselAvatar src={'assets/amazon.jpg'}/>
+            Gestamp
+            <P.CarouselAvatar/>
           </P.CarouselItemHeder>
           <P.CarouselItemParagraph>
-          Firma "SM group" dała się poznać jako rzetelny partner dostosowujący  */
+           Firma "SM group" dała się poznać jako rzetelny partner dostosowujący
            się do potrzeb naszej firmy i wspierający w przypadku sytuacji  
-           niezaplanowanych. "Usługi BHP 24" to profesjonaliści z szerokim zakresem wiedzy i doświadczeniem w zakresie bezpieczeństwa i higieny pracy. 
+           niezaplanowanych. 
         </P.CarouselItemParagraph>
         <P.CarouselItemSignature>
           Magdalena Kodybo, Kierownik Serwisu
@@ -77,30 +77,30 @@ const StronaGlowna = () => {
       <CarouselItem>
       <P.CarouselTextWrapper>
       <P.CarouselItemHeder>
-            Referencje2
+            Jungerinch
           </P.CarouselItemHeder>
           <P.CarouselItemParagraph>
-          Firma "SM group" dała się poznać jako rzetelny partner dostosowujący  */
-           się do potrzeb naszej firmy i wspierający w przypadku sytuacji  
-           niezaplanowanych. "Usługi BHP 24" to profesjonaliści z szerokim zakresem wiedzy i doświadczeniem w zakresie bezpieczeństwa i higieny pracy. 
+            Szkolenia prowadzone są z zaangażowaniem zarówno stacjonarne i on-line, 
+            a materiały odpowiadają najnowszym standardom rynkowym. Proces szkoleń 
+            jest doskonale przygotowany i prowadzony zgodnie z ustalonymi potrzebami.
         </P.CarouselItemParagraph>
         <P.CarouselItemSignature>
-          Magdalena Kodybo, Kierownik Serwisu
+          Marzena Osowska Matasz, Talent Acquisition and Development Manager
         </P.CarouselItemSignature>
         </P.CarouselTextWrapper>
       </CarouselItem>
       <CarouselItem>
       <P.CarouselTextWrapper>
       <P.CarouselItemHeder>
-            Referencje3
+            Firma ROM
           </P.CarouselItemHeder>
           <P.CarouselItemParagraph>
-          Firma "SM group" dała się poznać jako rzetelny partner dostosowujący  */
-           się do potrzeb naszej firmy i wspierający w przypadku sytuacji  
-           niezaplanowanych. "Usługi BHP 24" to profesjonaliści z szerokim zakresem wiedzy i doświadczeniem w zakresie bezpieczeństwa i higieny pracy. 
+            Jestem bardzo zadowolony ze współpracy z firmą SM group. 
+            Nie ma problemu z kontaktem i umówieniem spotkania. Bardzo sprawnie 
+            i fachowo prowadzą szkolenia. Polecam
         </P.CarouselItemParagraph>
         <P.CarouselItemSignature>
-          Magdalena Kodybo, Kierownik Serwisu
+          Stanisław Sasim, Kierownik Serwisu
         </P.CarouselItemSignature>
         </P.CarouselTextWrapper>
       </CarouselItem>

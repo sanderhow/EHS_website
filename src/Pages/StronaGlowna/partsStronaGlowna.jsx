@@ -133,22 +133,26 @@ export const CarouselItemHeder = styled.div`
     height: 100px;
     display: block;
     position: relative;
+    font-size: 2.2rem;
+    font-weight: 900;
+    justify-content: center;
 `
 
 export const CarouselAvatar = styled.img`
-    content: "";
-    background-image: url("./assets/amazon.jpg");
-    opacity: 0.5;
-    top: 0;
+    /* content: ""; */
+    /* background-image: url("./assets/amazon.png"); */
+    /* opacity: 0.5; */
+    /* top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
+    /* background-color: blue; */
+    /* background-blend-mode: multiply; */ */
 `
 
 export const CarouselItemParagraph = styled.div`
-    /* width: 500px; */
     white-space: pre-wrap;
     text-align: center;
     font-size: 1.2rem;

@@ -13,7 +13,7 @@ export const ParallaxLayer1Price = styled.div`
 background-size: 100%;
 position: absolute;
 width: 100%;
-min-height: 330px;
+min-height: 300px;
 background-image: url(${(props) => props.src44});
 background-size: cover;
 background-attachment: fixed;

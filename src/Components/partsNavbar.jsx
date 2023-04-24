@@ -8,7 +8,11 @@ export const PrimaryNav = styled.nav`
   height: 110px;
   display: 100%;
   width: 100%;
-  background: ${purpleColor};
+  /* background: ${purpleColor}; */
+  background-image: url("./assets/navbar-photo1.jpg");
+  background-size: cover;
+  opacity: 80%;
+  background-position: bottom;
   display: flex;
   position: sticky;
   top: 0;
@@ -19,13 +23,15 @@ export const PrimaryNav = styled.nav`
 `
 
 export const MenuLink = styled(Link)`
-  color: #fff;
+  color: black;
+  font-weight: 800;
   display: flex;
   cursor: pointer;
   align-items: center;
   text-decoration: none;
   padding: 0 1.2rem;
   height: 100%;
+  /* margin-top: 20px; */
 
   &:active {
     color: #000000;
@@ -53,7 +59,6 @@ export const OpacityElement = styled.div`
 export const ListedMenu = styled.div`
   height: 300px;
   width: 450px;
-  background-color: ${purpleColor};
   display: flex;
   justify-content: flex-start;
   top: ${(props) => props.y + 65}px;

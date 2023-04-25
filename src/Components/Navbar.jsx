@@ -19,7 +19,7 @@ function Navbar(props) {
       <P.PrimaryNav>
         <P.Logo
           onClick={handleLogoClicked}
-          src="assets/logo-safety.png"
+          src="assets/logo_transparent.png"
           alt="logo"
         />
         <P.Hamburger size={50} onClick={handleClick} />
@@ -85,7 +85,7 @@ function Navbar(props) {
                 x={props.Rect.x}
                 y={props.Rect.y}
               />
-              <P.OpacityElement />
+              <P.OpacityElement onMouseEnter={props.turnOffListedMenu}/>
             </>
           )}
           <P.MenuLink

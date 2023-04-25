@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { blackColor, orangeColor } from "../../utils/utils";
+import { blackColor } from "../../utils/utils";
 
 export const WrapperTrainings = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ export const TrainingOffer = styled.div`
 
 export const TrainingParagraph = styled.p`
   font-size: 1.9rem;
-  width: 50%;
+  width: 70%;
   font-family: "Poppins", sans-serif;
   line-height: 1.2;
   font-weight: 600;

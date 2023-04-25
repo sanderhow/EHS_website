@@ -19,31 +19,39 @@ function App() {
     const hoveredElement = event.target;
     setRect(hoveredElement.getBoundingClientRect());
     setIsHovered(true);
+    // setIsHoveredMenuListed(true);
   };
 
   const handleMouseLeave = (event) => {
-    turnOffWithDelay();
+    if (!isHoveredMenuListed) {
+      setIsHovered(false);
+    } 
   };
 
   const handleMouseHoveredListedMenu = (event) => {
+    console.log(`isHov:${isHovered}`);
     setIsHoveredMenuListed(true);
   };
 
   const handleMouseLeaveListedMenu = (event) => {
     setIsHovered(false);
-    setIsHoveredMenuListed(false);
+    if (!isHovered) {
+      setIsHoveredMenuListed(false);
+    }
   };
 
-  const turnOffWithDelay = () => {
-    if (!isHoveredMenuListed) {
-      setIsHovered(false);
-    }
+  const turnOffListedMenu = () => {
+    setIsHovered(false);
   };
 
   return (
     <>
       <A.AppState>
         <BrowserRouter>
+        <A.ShortContact onMouseEnter={turnOffListedMenu}>
+          <A.Text>Zadzwoń do nas + 48 508 762 858</A.Text>
+          <A.Text>Napisz do nas: kontakt@smsafetygroup.pl</A.Text>
+        </A.ShortContact>
           <Navbar
             Hover={isHovered}
             HoverOn={handleMouseHover}
@@ -51,6 +59,7 @@ function App() {
             Hover2={handleMouseHoveredListedMenu}
             LeaveHover2={handleMouseLeaveListedMenu}
             Rect={rect}
+            turnOffListedMenu={turnOffListedMenu}
           />
           <Routes>
             <Route path="/" element={<StronaGlowna />} />

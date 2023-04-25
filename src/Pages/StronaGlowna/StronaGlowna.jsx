@@ -6,7 +6,7 @@ const StronaGlowna = () => {
   return (
     <P.Wrapper>
       <P.BackgroundImage />
-      <P.Header>Poprawa bezpieczeństwa wymaga przywództwa</P.Header>
+      <P.Header>Poprawa bezpieczeństwa wymaga przywództwa.</P.Header>
 
       <P.WrapperDeclaration>
         <P.HeaderDeclaration>
@@ -58,17 +58,28 @@ const StronaGlowna = () => {
           </P.OfferItem>
         </P.Offer>
       </P.OfferWrapper>
+
+      <P.TrustedClients>
+        <P.TrustedClientsHeader>Zaufali nam między innymi</P.TrustedClientsHeader>
+        <P.TrustedClientsLogos>
+          <P.TrustedClientsImage1 src="assets/gestamp_logo.png" />
+          <P.TrustedClientsImage src="assets/adidas_logo.png" />
+          <P.TrustedClientsImage2 src="assets/nestle_logo.png" />
+          <P.TrustedClientsImage src="assets/bird_logo.png" />
+          <P.TrustedClientsImage src="assets/sonoco_logo.png" />
+        </P.TrustedClientsLogos>
+      </P.TrustedClients>
+
       <Carousel>
         <CarouselItem>
           <P.CarouselTextWrapper>
             <P.CarouselItemHeder>
-              Gestamp
-              <P.CarouselAvatar />
+              <P.CarouselAvatar2 src="assets/nestle_logo.png" />
             </P.CarouselItemHeder>
             <P.CarouselItemParagraph>
               Firma "SM group" dała się poznać jako rzetelny partner
               dostosowujący się do potrzeb naszej firmy i wspierający w
-              przypadku sytuacji niezaplanowanych.
+              przypadku sytuacji niezaplanowanych. "SM group" to profesjonaliści.
             </P.CarouselItemParagraph>
             <P.CarouselItemSignature>
               Magdalena Kodybo, Kierownik Serwisu
@@ -77,7 +88,9 @@ const StronaGlowna = () => {
         </CarouselItem>
         <CarouselItem>
           <P.CarouselTextWrapper>
-            <P.CarouselItemHeder>Jungerinch</P.CarouselItemHeder>
+            <P.CarouselItemHeder>
+            <P.CarouselAvatar2 src="assets/adidas_logo.png" />
+            </P.CarouselItemHeder>
             <P.CarouselItemParagraph>
               Szkolenia prowadzone są z zaangażowaniem zarówno stacjonarne i
               on-line, a materiały odpowiadają najnowszym standardom rynkowym.
@@ -91,7 +104,9 @@ const StronaGlowna = () => {
         </CarouselItem>
         <CarouselItem>
           <P.CarouselTextWrapper>
-            <P.CarouselItemHeder>Firma ROM</P.CarouselItemHeder>
+            <P.CarouselItemHeder>
+              <P.CarouselAvatar2 src="assets/nikon_logo.png" />
+            </P.CarouselItemHeder>
             <P.CarouselItemParagraph>
               Jestem bardzo zadowolony ze współpracy z firmą SM group. Nie ma
               problemu z kontaktem i umówieniem spotkania. Bardzo sprawnie i

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { blackColor, orangeColor, purpleColor } from "../../utils/utils";
+import { blackColor } from "../../utils/utils";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -9,7 +9,6 @@ export const BackgroundImage = styled.img`
   background-image: url("./assets/strona_glowna.jpg");
   height: 100vh;
   width: 100%;
-  /* opacity: 0.8;  */
   background-size: cover;
 `;
 
@@ -27,13 +26,12 @@ export const Header = styled.div`
 
   @media screen and (max-width: 1024px) {
     right: 40%;
-    font-size: 4rem;
+    font-size: 4.2rem;
     left: 5%;
   }
   @media screen and (max-width: 700px) {
-    font-size: 3rem;
-    right: 40%;
-    left: 5%;
+    font-size: 2.6rem;
+    left: 10px;
   }
 `;
 
@@ -55,6 +53,8 @@ export const ParagraphDeclaration = styled.p`
   color: ${blackColor};
 `;
 
+//Offer Icons Section//
+
 export const OfferWrapper = styled.div`
   background-size: cover;
 `;
@@ -66,16 +66,9 @@ export const Offer = styled.ul`
   padding-left: 0;
 
   @media screen and (max-width: 1024px) {
-    font-size: 0.7rem;
-    display: flex;
-    align-items: center;
-  }
-  @media screen and (max-width: 700px) {
-    font-size: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    left: 0%;
+    align-items: center;
   }
 `;
 
@@ -108,16 +101,78 @@ export const OfferItem = styled.div`
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1024px) {
     padding: 10px;
+    margin: 10px;
   }
 `;
 
 export const OfferParagraph = styled.p`
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: normal;
   font-family: "Alegreya Regular400", sans-serif;
+
+  @media screen and (max-width: 1024px) {
+    padding: 10px;
+  }
 `;
+
+// Trusted Clients Logos//
+
+export const TrustedClients = styled.div`
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const TrustedClientsHeader = styled.h1`
+  font-size: 2.1rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  margin-left: 60px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 50px 0 35px 0px;
+    text-align: center;
+  }
+`;
+
+export const TrustedClientsLogos = styled.div`
+  position: relative;
+  margin-left: 110px;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+`;
+
+export const TrustedClientsImage = styled.img`
+  padding: 30px;
+  width: 165px;
+  height: 100px;
+`;
+
+export const TrustedClientsImage1 = styled.img`
+  width: 210px;
+  height: 60px;
+  background: transparent;
+  padding: 30px;
+`;
+
+export const TrustedClientsImage2 = styled.img`
+  padding: 14px 30px;
+  width: 165px;
+  height: 130px;
+`;
+
+// Carousel Wrapper with Clients Recommendations//
 
 export const CarouselTextWrapper = styled.div`
   /* height: 300px; */
@@ -136,23 +191,29 @@ export const CarouselItemHeder = styled.div`
   justify-content: center;
 `;
 
-export const CarouselAvatar = styled.img`
-    /* content: ""; */
-    /* background-image: url("./assets/amazon.png"); */
-    /* opacity: 0.5; */
-    /* top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    /* z-index: -1; */
-    /* background-color: blue; */
-    /* background-blend-mode: multiply; */ */
+export const CarouselAvatar1 = styled.img`
+  width: 200px;
+  height: 70px;
+  background: transparent;
+  padding: 30px;
 `;
+
+export const CarouselAvatar2 = styled.img`
+  width: 140px;
+  height: 70px;
+  background: transparent;
+`;
+
+export const CarouselAvatar3 = styled.img`
+  width: 180px;
+  height: 90px;
+  background: transparent;
+`;
+
 
 export const CarouselItemParagraph = styled.div`
   white-space: pre-wrap;
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
   font-weight: normal;
   font-family: "Alegreya Regular400", sans-serif;
@@ -160,7 +221,7 @@ export const CarouselItemParagraph = styled.div`
 `;
 
 export const CarouselItemSignature = styled.div`
-  text-align: center;
+  text-align: left;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   padding-top: 20px;

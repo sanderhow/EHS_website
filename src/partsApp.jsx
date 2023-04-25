@@ -23,6 +23,24 @@ export const MainView = styled.div`
   }
 `;
 
+export const ShortContact = styled.div`
+  background-color: ${blackColor};
+  height: 50px;
+  display: flex;
+`;
+
+export const Text = styled.div`
+  color: white;
+  font-weight: 300;
+  padding: 16px 50px;
+  font-size: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+`;
+
 export const Footer = styled.div`
   padding: 10px;
   margin-top: 35px;

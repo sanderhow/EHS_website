@@ -1,7 +1,7 @@
-import { FaBars } from 'react-icons/fa'
-import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
-import { orangeColor, purpleColor } from '../utils/utils'
+import { FaBars } from "react-icons/fa";
+import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
+import { orangeColor, purpleColor } from "../utils/utils";
 
 export const PrimaryNav = styled.nav`
   z-index: 1;
@@ -18,9 +18,9 @@ export const PrimaryNav = styled.nav`
   top: 0;
   justify-content: space-between;
   font-size: 1.1rem;
-  font-family: 'Alegreya Regular400', sans-serif;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2); 
-`
+  font-family: "Alegreya Regular400", sans-serif;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+`;
 
 export const MenuLink = styled(Link)`
   color: black;
@@ -42,19 +42,19 @@ export const MenuLink = styled(Link)`
     background-color: ${orangeColor};
     border-radius: 30px;
   }
-`
+`;
 
 export const OpacityElement = styled.div`
   background-color: black;
   z-index: -1;
   height: 100vh;
   width: 100%;
-  opacity: 0.6; 
+  opacity: 0.6;
   background-size: cover;
   position: absolute;
   top: 110px;
   left: 0px;
-`
+`;
 
 export const ListedMenu = styled.div`
   height: 300px;
@@ -65,8 +65,8 @@ export const ListedMenu = styled.div`
   position: absolute;
   left: ${(props) => props.x - 330}px;
   border-radius: 0 0 15% 15%;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
-`
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+`;
 
 export const Hamburger = styled(FaBars)`
   display: none;
@@ -86,7 +86,7 @@ export const Hamburger = styled(FaBars)`
   &:hover {
     color: black;
   }
-`
+`;
 
 export const ListedHamburgerMenu = styled.div`
   height: 300px;
@@ -100,22 +100,22 @@ export const ListedHamburgerMenu = styled.div`
   position: absolute;
   left: 0;
   border-radius: 0 0 15% 15%;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
-`
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+`;
 
 export const Menu = styled.div`
   display: flex;
   padding: 20px;
   margin-right: 25px;
-  
+
   @media screen and (max-width: 1024px) {
-    display: none
+    display: none;
   }
-`
+`;
 
 export const Logo = styled.img`
   border-radius: 50%;
   padding-left: 20px;
   width: 125px;
   height: 110px;
-`
+`;

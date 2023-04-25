@@ -1,60 +1,59 @@
-import styled from 'styled-components';
-import { beigeColor, orangeColor, purpleColor } from '../../utils/utils';
+import styled from "styled-components";
 
 export const WrapperContact = styled.div`
-    position: relative;
+  position: relative;
+  display: flex;
+  background: white;
+  min-height: 1000px;
+  @media screen and (max-width: 1200px) {
     display: flex;
-    background: white;
-    min-height: 1000px;
-    @media screen and (max-width: 1200px) {
-        display: flex;
-        flex-direction: column;
-    }
-`
+    flex-direction: column;
+  }
+`;
 export const WrapperContactInfo = styled.div`
-    width: 60%;
-    @media screen and (max-width: 1200px) {
-        width: 100%;
-    }
-`
+  width: 60%;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+`;
 
 export const ContactHeader = styled.h3`
-    font-size: 2.1rem;
-    margin: 10% 30% 0 30%;
-    font-family: 'Poppins', sans-serif;
-    @media screen and (max-width: 1200px) {
-        margin: 20px 5px 0 20px;
-    }
-`
+  font-size: 2.1rem;
+  margin: 10% 30% 0 30%;
+  font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 1200px) {
+    margin: 20px 5px 0 20px;
+  }
+`;
 
 export const ContactInfo = styled.div`
-    margin: 5% 30% 0 30%;
-    font-family: "Alegreya Regular400", sans-serif;
-    font-size: 1.2rem;
-    @media screen and (max-width: 1200px) {
-        margin: 0 20px;
-    }
-`
+  margin: 5% 30% 0 30%;
+  font-family: "Alegreya Regular400", sans-serif;
+  font-size: 1.2rem;
+  @media screen and (max-width: 1200px) {
+    margin: 0 20px;
+  }
+`;
 export const ContactInfoHolder = styled.div`
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    height: auto;
-    width: 100%;
-`
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: auto;
+  width: 100%;
+`;
 export const ContactIcon = styled.div`
-    position: relative;
-    display: table-cell;
-    width: 35px;
-    font-size: 1.2rem;
-    color: ${purpleColor};
-`
+  position: relative;
+  display: table-cell;
+  width: 35px;
+  font-size: 1.2rem;
+  color: #6c8fac;
+`;
 
 export const ContactInfoElement = styled.p`
-    position: relative;
-    display: table-cell;
-    line-height: 1.8;
-`
+  position: relative;
+  display: table-cell;
+  line-height: 1.8;
+`;
 
 // export const Avatar = styled.div`
 //     padding: 30px;
@@ -63,13 +62,13 @@ export const ContactInfoElement = styled.p`
 // `
 
 export const WrapperContactForm = styled.div`
-    max-width: 1270px;
-    /* margin-top: 5%; */
-    @media screen and (max-width: 1200px) {
-        margin: 20px 35px;   
-    }
-`
+  max-width: 1270px;
+  /* margin-top: 5%; */
+  @media screen and (max-width: 1200px) {
+    margin: 20px 35px;
+  }
+`;
 
 // export const ContactForm = styled.div`
-    
+
 // `

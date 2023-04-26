@@ -22,12 +22,11 @@ export const PrimaryNav = styled.nav`
 
 export const MenuLink = styled(Link)`
   color: black;
-  /* font-weight: 800; */
   display: flex;
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  padding: 0 1.2rem;
+  padding: 0 20px;
   height: 100%;
   /* margin-top: 20px; */
 
@@ -39,6 +38,30 @@ export const MenuLink = styled(Link)`
     color: white;
     background-color: #47b5ff;;
     border-radius: 0px;
+  }
+`
+
+export const DropdownMenuLink = styled(Link)`
+  color: black;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 30px;
+  height: 100%;
+  /* margin-top: 20px; */
+
+  &:active {
+    color: #000000;
+  }
+
+  &:hover {
+    text-decoration: overline;
+    text-decoration-color: #47b5ff;
+    border-radius: 0px;
+    position: relative;
+    bottom: 10px;
+    transition: 0.2s;
   }
 `
 
@@ -54,18 +77,19 @@ export const OpacityElement = styled.div`
   left: 0px;
 `
 
-export const ListedMenu = styled.div`
-  height: 300px;
-  width: 450px;
+export const DropdownMenu = styled.div`
+  height: 160px;
+  width: 850px;
   display: flex;
   justify-content: flex-start;
   /* top: ${(props) => props.y + 65}px; */
   top: 110px;
   position: absolute;
-  left: ${(props) => props.x - 330}px;
-  border-radius: 0 0 15% 15%;
+  left: ${(props) => props.x - 130}px;
+  /* border-radius: 0 0 10% 10%; */
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
-  background-color: red;
+  background-color: white;
+  text-align: center;
 `
 
 export const Hamburger = styled(FaBars)`

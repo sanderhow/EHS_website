@@ -77,14 +77,39 @@ function Navbar(props) {
         )}
 
         <P.Menu>
-          {props.Hover && (
+          {props.Hover && props.serviceTitle === "Usługi" && (
             <>
-              <P.ListedMenu
+              <P.DropdownMenu
                 onMouseOver={props.Hover2}
                 onMouseLeave={props.LeaveHover2}
                 x={props.Rect.x}
                 y={props.Rect.y}
-              />
+                >
+                  <P.DropdownMenuLink
+                  to="/szkolenia"
+                  activeStyle
+                  >
+                  Szkolenia wstępne
+                  </P.DropdownMenuLink>
+                  <P.DropdownMenuLink
+                  to="/szkolenia"
+                  activeStyle
+                  >
+                  Szkolenia okresowe
+                  </P.DropdownMenuLink>
+                  <P.DropdownMenuLink
+                  to="/nadzor"
+                  activeStyle
+                  >
+                  Outsourcing BHP
+                  </P.DropdownMenuLink>
+                  <P.DropdownMenuLink
+                  to="/cennik"
+                  activeStyle
+                  >
+                  Obsługa BHP
+                  </P.DropdownMenuLink>
+              </P.DropdownMenu>
               <P.OpacityElement onMouseEnter={props.turnOffListedMenu}/>
             </>
           )}

@@ -157,6 +157,11 @@ export const TrustedClientsImage = styled.img`
   padding: 30px;
   width: 165px;
   height: 100px;
+
+  &:hover {
+    transform: translateY(-20px);
+    transition: 0.3s;
+  }
 `;
 
 export const TrustedClientsImage1 = styled.img`
@@ -164,12 +169,22 @@ export const TrustedClientsImage1 = styled.img`
   height: 60px;
   background: transparent;
   padding: 30px;
+
+  &:hover {
+    transform: translateY(-20px);
+    transition: 0.3s;
+  }
 `;
 
 export const TrustedClientsImage2 = styled.img`
   padding: 14px 30px;
   width: 165px;
   height: 130px;
+
+  &:hover {
+    transform: translateY(-20px);
+    transition: 0.3s;
+  }
 `;
 
 // Carousel Wrapper with Clients Recommendations//

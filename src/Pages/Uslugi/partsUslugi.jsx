@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
+import { NavLink as Link } from 'react-router-dom';
 
 export const ServiceCardWrapper = styled.div`
   position: relative;
@@ -39,7 +40,7 @@ export const Paragraph = styled.p`
   line-height: 1.4;
 `;
 
-export const Hyperlink = styled.div`
+export const Hyperlink = styled(Link)`
   text-decoration: underline;
   font-size: 1.4rem;
   padding-top: 30px;

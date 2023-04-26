@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel, CarouselItem } from "./Carousel";
 import * as P from "./partsStronaGlowna";
 
 const StronaGlowna = () => {
+
   return (
     <P.Wrapper>
       <P.BackgroundImage />

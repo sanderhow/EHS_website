@@ -74,7 +74,10 @@ function Uslugi() {
           <P.Header>Szkolenia BHP Wstępne</P.Header>
           <P.Paragraph>Stacjonarne</P.Paragraph>
           <P.Paragraph>On-line</P.Paragraph>
-          <P.Hyperlink>Dowiedz się więcej</P.Hyperlink>
+          <P.Hyperlink
+            to="/szkolenia"
+            activeStyle
+          >Dowiedz się więcej</P.Hyperlink>
         </P.TextWrapper>
         <P.AvatarWrapper1 ref={element1} isObserved={isObserved1}>
           <P.AvatarUslugi img src="assets/szkolenia-wstepne.jpg" />
@@ -87,7 +90,11 @@ function Uslugi() {
         </P.AvatarWrapper2>
         <P.TextWrapper1>
           <P.Header>Szkolenia BHP Okresowe</P.Header>
-          <P.Hyperlink>Dowiedz się więcej</P.Hyperlink>
+          <P.Hyperlink
+            to="/szkolenia"
+            activeStyle
+          >
+            Dowiedz się więcej</P.Hyperlink>
         </P.TextWrapper1>
       </P.ServiceCardWrapper>
 

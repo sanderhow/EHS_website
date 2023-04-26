@@ -14,9 +14,12 @@ function App() {
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredMenuListed, setIsHoveredMenuListed] = useState(false);
   const [rect, setRect] = useState({});
+  const [serviceTitle, setServiceTitle] = useState('null');
+
 
   const handleMouseHover = (event) => {
     const hoveredElement = event.target;
+    setServiceTitle(event.target.innerHTML);
     setRect(hoveredElement.getBoundingClientRect());
     setIsHovered(true);
     // setIsHoveredMenuListed(true);
@@ -60,6 +63,7 @@ function App() {
             LeaveHover2={handleMouseLeaveListedMenu}
             Rect={rect}
             turnOffListedMenu={turnOffListedMenu}
+            serviceTitle={serviceTitle}
           />
           <Routes>
             <Route path="/" element={<StronaGlowna />} />

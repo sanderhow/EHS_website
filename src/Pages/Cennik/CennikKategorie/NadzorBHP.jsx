@@ -4,7 +4,6 @@ import * as P from "././partsCennikKategorie";
 function NadzorBHP() {
   return (
     <>
-      {/* <P.TrainingWrapper> */}
       <P.PriceCardTitle>
         <P.PriceCardHeader>Nadzór BHP</P.PriceCardHeader>
       </P.PriceCardTitle>
@@ -22,8 +21,6 @@ function NadzorBHP() {
           <P.CardButton>Zamawiam</P.CardButton>
         </P.Card>
       </P.PriceCardWrapper>
-
-      {/* // </P.TrainingWrapper> */}
     </>
   );
 }

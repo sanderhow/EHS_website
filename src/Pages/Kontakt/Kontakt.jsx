@@ -1,5 +1,4 @@
 import React from "react";
-import FirmaInfo from "./FirmaInfo";
 import KontaktForm from "./KontaktForm";
 import ParallaxBackground from "../../Components/ParallaxBackground/ParallaxBackground";
 import * as P from "./partsKontakt";
@@ -47,10 +46,7 @@ function Kontakt() {
         </P.WrapperContactInfo>
 
         <P.WrapperContactForm>
-          {/* <P.ContactForm> */}
-          {/* <FirmaInfo/> */}
           <KontaktForm />
-          {/* </P.ContactForm> */}
         </P.WrapperContactForm>
       </P.WrapperContact>
     </>

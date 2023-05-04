@@ -29,6 +29,7 @@ export const Header = styled.div`
     font-size: 4.2rem;
     left: 5%;
   }
+  
   @media screen and (max-width: 700px) {
     font-size: 2.6rem;
     left: 10px;

@@ -5,7 +5,6 @@ export const AppState = styled.div`
   min-height: 1000px;
 `;
 
-
 export const ShortContact = styled.div`
   background-color: ${blackColor};
   height: 50px;

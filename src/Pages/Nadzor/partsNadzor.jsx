@@ -4,6 +4,7 @@ export const Outsourcing = styled.div`
   position: relative;
   display: block;
   margin: 5% 10% 0;
+
   @media screen and (max-width: 1200px) {
     text-align: center;
     margin: 0 20px;
@@ -19,6 +20,7 @@ export const OutsourcingText = styled.p`
   font-family: "Alegreya Regular400", sans-serif;
   font-size: 1.2rem;
   line-height: 1.2;
+
   @media screen and (max-width: 700px) {
     font-size: 1rem;
   }
@@ -58,6 +60,7 @@ export const LeftContainerHeader = styled.h3`
 export const LeftContainerParagraph = styled.p`
   font-family: "Alegreya Regular400", sans-serif;
   font-size: 1.2rem;
+
   @media screen and (max-width: 700px) {
     font-size: 1rem;
   }
@@ -65,6 +68,7 @@ export const LeftContainerParagraph = styled.p`
 
 export const RightContainerOutsourcingOffer = styled.div`
   width: 50%;
+  
   @media screen and (max-width: 1200px) {
     width: 100%;
   }

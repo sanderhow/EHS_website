@@ -6,12 +6,6 @@ export const CompanyWrapper = styled.div`
   flex-direction: column;
   margin: 0 10%;
 `;
-// export const CompanyHeader = styled.h3`
-//     font-family: 'Poppins', sans-serif;
-//     font-size: 2.1rem;
-//     display: flex;
-//     margin: 3% 10%;
-// `
 
 export const CompanyHeaderLogo = styled.h3`
   font-family: "Rock Salt", cursive;

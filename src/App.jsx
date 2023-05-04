@@ -17,13 +17,11 @@ function App() {
   const [rect, setRect] = useState({});
   const [serviceTitle, setServiceTitle] = useState('null');
 
-
   const handleMouseHover = (event) => {
     const hoveredElement = event.target;
     setServiceTitle(event.target.innerHTML);
     setRect(hoveredElement.getBoundingClientRect());
     setIsHovered(true);
-    // setIsHoveredMenuListed(true);
   };
 
   const handleMouseLeave = (event) => {
@@ -33,7 +31,6 @@ function App() {
   };
 
   const handleMouseHoveredListedMenu = (event) => {
-    console.log(`isHov:${isHovered}`);
     setIsHoveredMenuListed(true);
   };
 

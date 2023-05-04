@@ -4,7 +4,6 @@ import * as P from "././partsCennikKategorie";
 function AnalizaWypadkowa() {
   return (
     <>
-      {/* <P.TrainingWrapper> */}
       <P.PriceCardTitle>
         <P.PriceCardHeader>
           Warsztaty autorskie z analizy wypadków/ zdarzeń potencjalnie
@@ -25,8 +24,6 @@ function AnalizaWypadkowa() {
           <P.CardButton>Zamawiam</P.CardButton>
         </P.Card>
       </P.PriceCardWrapper>
-
-      {/* // </P.TrainingWrapper> */}
     </>
   );
 }

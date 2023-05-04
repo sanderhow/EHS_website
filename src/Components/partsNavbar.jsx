@@ -95,7 +95,7 @@ export const HamburgerWrapper = styled.div`
   justify-content: center;
   align-items: center;
   
-@media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     display: flex;
   }
 `

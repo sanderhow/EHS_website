@@ -7,7 +7,6 @@ function Firma() {
     <>
       <ParallaxBackground src={"assets/onas.jpg"} label={"O nas"} />
       <P.CompanyWrapper>
-        {/* <P.CompanyHeader>Wybierz</P.CompanyHeader> */}
         <P.CompanyHeaderLogo>SM Safety Group</P.CompanyHeaderLogo>
         <P.CompanyWrapperText>
           <P.WrapperText>

@@ -4,11 +4,13 @@ import { blackColor } from "../../utils/utils";
 export const WrapperTrainings = styled.div`
   display: flex;
   position: relative;
+
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     align-items: center;
     margin: 0 80px;
   }
+
   @media screen and (max-width: 700px) {
     margin: 0 20px;
   }
@@ -16,6 +18,7 @@ export const WrapperTrainings = styled.div`
 
 export const TrainingBox = styled.div`
   display: block;
+
   @media screen and (max-width: 1200px) {
     font-size: 0.5rem;
     display: flex;
@@ -36,6 +39,7 @@ export const TrainingParagraph = styled.p`
   line-height: 1.2;
   font-weight: 600;
   line-break: strict;
+  
   @media screen and (max-width: 1200px) {
     width: 100%;
     text-align: center;

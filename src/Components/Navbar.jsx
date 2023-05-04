@@ -1,26 +1,23 @@
 import React, { useState, useEffect, useRef } from "react";
-import * as P from "./partsNavbar";
 import { useNavigate } from "react-router-dom";
+import * as P from "./partsNavbar";
 
 function Navbar(props) {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isAdditionalMenuOpen, setIsAdditionalMenuOpen] = useState(false);
   const navigate = useNavigate();
   const hamburgerButton = useRef(null);
 
-  const handleClick = (event) => {
-    setIsClicked(!isClicked);
+  const handleClick = () => {
+    setIsAdditionalMenuOpen(!isAdditionalMenuOpen);
   };
 
-  const handleLogoClicked = (event) => {
+  const handleLogoClicked = () => {
     navigate("/");
   };
 
   const handleTurnOffHamburger = (event) => {
-    console.log(event.target);
-    console.log(hamburgerButton.current);
-    if (isClicked && event.target !== hamburgerButton.current) {
-      setIsClicked(false);
-
+    if (isAdditionalMenuOpen && event.target !== hamburgerButton.current) {
+      setIsAdditionalMenuOpen(false);
     }
   };
 
@@ -30,7 +27,6 @@ function Navbar(props) {
   });
 
   return (
-    <>
       <P.PrimaryNav>
         <P.Logo
           onClick={handleLogoClicked}
@@ -40,7 +36,8 @@ function Navbar(props) {
         <P.HamburgerWrapper ref={hamburgerButton} size={50} onClick={handleClick}>
           <P.Hamburger />
         </P.HamburgerWrapper >
-        {isClicked && (
+
+        {isAdditionalMenuOpen && (
           <P.ListedHamburgerMenu>
             <P.MenuLink
               to="/uslugi"
@@ -130,6 +127,7 @@ function Navbar(props) {
               <P.OpacityElement onMouseEnter={props.turnOffListedMenu}/>
             </>
           )}
+
           <P.MenuLink
             to="/uslugi"
             activeStyle
@@ -180,7 +178,6 @@ function Navbar(props) {
           </P.MenuLink>
         </P.Menu>
       </P.PrimaryNav>
-    </>
   );
 }
 

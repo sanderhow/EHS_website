@@ -4,7 +4,6 @@ import * as P from "././partsCennikKategorie";
 function OcenaRyzykaZaw() {
   return (
     <>
-      {/* <P.TrainingWrapper> */}
       <P.PriceCardTitle>
         <P.PriceCardHeader>Ryzyko Zawodowe</P.PriceCardHeader>
       </P.PriceCardTitle>
@@ -22,8 +21,6 @@ function OcenaRyzykaZaw() {
           <P.CardButton>Zamawiam</P.CardButton>
         </P.Card>
       </P.PriceCardWrapper>
-
-      {/* // </P.TrainingWrapper> */}
     </>
   );
 }

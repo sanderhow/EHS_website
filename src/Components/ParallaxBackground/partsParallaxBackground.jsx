@@ -18,7 +18,7 @@ export const ParallaxLayer1Price = styled.div`
   position: absolute;
   width: 100%;
   min-height: 300px;
-  background-image: url(${(props) => props.src44});
+  background-image: url(${(props) => props.src});
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,6 +52,7 @@ export const ControlHeaderPrice = styled.h3`
   position: relative;
   margin: 0;
   color: ${blackColor};
+  
   @media screen and (max-width: 700px) {
     text-align: center;
     font-size: 2.7rem;

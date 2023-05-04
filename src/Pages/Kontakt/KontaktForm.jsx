@@ -4,7 +4,6 @@ import * as P from "./partsKontaktForm";
 function KontaktForm() {
   return (
     <P.ContactFormContainer>
-      {/* <P.FormHeader>Skontaktuj się z nami</P.FormHeader> */}
       <P.Form>
         <P.WrappedGrid>
           <P.ContactLabel>Imię, Nazwisko</P.ContactLabel>

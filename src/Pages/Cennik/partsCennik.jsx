@@ -12,6 +12,7 @@ export const PriceButtonsWrapper = styled.div`
     margin: 35px 55px;
   }
 `;
+
 export const PriceButton = styled.button`
   background-color: ${blackColor};
   border: none;
@@ -23,6 +24,7 @@ export const PriceButton = styled.button`
   display: inline-block;
   font-size: 16px;
   background-color: ${(props) => props.isActive && "#47B5FF"};
+  
   &:active {
     color: #000000;
   }

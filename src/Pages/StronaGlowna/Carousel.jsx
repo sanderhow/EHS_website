@@ -4,9 +4,7 @@ import * as P from "./partsCarousel";
 
 export function CarouselItem(props) {
   return (
-    <>
-      <P.CarouselItem width={props.width}>{props.children}</P.CarouselItem>
-    </>
+    <P.CarouselItem width={props.width}>{props.children}</P.CarouselItem>
   );
 }
 
@@ -37,6 +35,7 @@ export function Carousel(props) {
       }
     };
   });
+  
   return (
     <>
       <P.Carousel

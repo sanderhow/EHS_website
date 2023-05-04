@@ -73,6 +73,7 @@ export const CardButton = styled.button`
 
 export const PriceCardTitle = styled.div`
   margin: 40px 0 30px 50px;
+  
   @media screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;

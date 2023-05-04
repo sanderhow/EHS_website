@@ -5,6 +5,7 @@ export const WrapperContact = styled.div`
   display: flex;
   background: white;
   min-height: 1000px;
+
   @media screen and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@ export const WrapperContact = styled.div`
     align-items: center;
   }
 `;
+
 export const WrapperContactInfo = styled.div`
   width: 60%;
 
@@ -19,6 +21,7 @@ export const WrapperContactInfo = styled.div`
     width: auto;
     margin: 0px 10%;
   }
+
   @media screen and (max-width: 700px) {
     margin: 0px 5%;
   }
@@ -33,6 +36,7 @@ export const ContactHeader = styled.h3`
   @media screen and (max-width: 1200px) {
     margin: 5% 0;
   }
+
   @media screen and (max-width: 700px) {
     font-size: 2.1rem;
   }
@@ -42,9 +46,11 @@ export const ContactInfo = styled.div`
   margin: 5% 30% 0 30%;
   font-family: "Alegreya Regular400", sans-serif;
   font-size: 1.2rem;
+
   @media screen and (max-width: 1200px) {
     margin: 0 20px;
   }
+
   @media screen and (max-width: 700px) {
     margin: 0;
   }
@@ -61,6 +67,7 @@ export const ContactInfoHolder = styled.div`
   @media screen and (max-width: 1200px) {
     margin: 0 20%;
   }
+  
   @media screen and (max-width: 700px) {
     margin: 0 10%;
   }

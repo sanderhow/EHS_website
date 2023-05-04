@@ -1,11 +1,9 @@
 import React from "react";
 import * as P from "./partsCennikKategorie";
-// import SzkoleniaO from './partsSzkoleniaOkresowe';
 
 function SzkoleniaWstepne() {
   return (
     <>
-      {/* <P.TrainingWrapper> */}
       <P.PriceCardTitle>
         <P.PriceCardHeader>Administracyjne</P.PriceCardHeader>
       </P.PriceCardTitle>
@@ -67,7 +65,6 @@ function SzkoleniaWstepne() {
           <P.CardButton>Zamawiam</P.CardButton>
         </P.Card>
       </P.PriceCardWrapper>
-      {/* // </P.TrainingWrapper> */}
     </>
   );
 }

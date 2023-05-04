@@ -41,9 +41,11 @@ export const TextWrapper1 = styled.div`
 export const Header = styled.h1`
   font-family: "Poppins", sans-serif;
   font-size: 3.2rem;
+
   @media screen and (max-width: 1200px) {
     font-size: 2.1rem;  
   }
+
   @media screen and (max-width: 700px) {
     line-height: 1.1;
     font-size: 1.4rem;  
@@ -129,6 +131,7 @@ export const ServiceOffer = styled.ul`
   font-size: 2.1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
+  
   @media screen and (max-width: 700px) {
     line-height: 1.1;
   }

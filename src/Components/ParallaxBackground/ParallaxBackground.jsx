@@ -5,7 +5,7 @@ function ParallaxBackground(props) {
   return (
     <>
       <P.ParallaxWrapperPrice>
-        <P.ParallaxLayer1Price src44={props.src} />
+        <P.ParallaxLayer1Price src={props.src} />
         <P.ParallaxLayer2Price>
           <P.ControlHeaderPrice>{props.label}</P.ControlHeaderPrice>
         </P.ParallaxLayer2Price>

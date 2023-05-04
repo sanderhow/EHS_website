@@ -7,9 +7,8 @@ export const PrimaryNav = styled.nav`
   height: 110px;
   display: 100%;
   width: 100%;
-  /* background-image: url("./assets/navbar-photo1.jpg"); */
-  /* background-size: cover; */
-  /* opacity: 80%; */
+  opacity: 95%;
+  background-color: white;
   background-position: bottom;
   display: flex;
   position: sticky;
@@ -28,7 +27,6 @@ export const MenuLink = styled(Link)`
   text-decoration: none;
   padding: 0 20px;
   height: 100%;
-  /* margin-top: 20px; */
 
   &:active {
     color: #000000;
@@ -49,7 +47,6 @@ export const DropdownMenuLink = styled(Link)`
   text-decoration: none;
   padding: 0 30px;
   height: 100%;
-  /* margin-top: 20px; */
 
   &:active {
     color: #000000;
@@ -82,33 +79,31 @@ export const DropdownMenu = styled.div`
   width: 850px;
   display: flex;
   justify-content: flex-start;
-  /* top: ${(props) => props.y + 65}px; */
   top: 110px;
   position: absolute;
   left: ${(props) => props.x - 130}px;
-  /* border-radius: 0 0 10% 10%; */
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
   background-color: white;
   text-align: center;
 `
 
-export const Hamburger = styled(FaBars)`
+export const HamburgerWrapper = styled.div`
   display: none;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  
+@media screen and (max-width: 1024px) {
+    display: flex;
+  }
+`
+
+export const Hamburger = styled(FaBars)`
   color: black;
-
-  @media screen and (max-width: 1024px) {
-    display: block;
-    font-size: 1.9rem;
-    top: 0;
-    right: 0;
-    position: absolute;
-    cursor: pointer;
-    transform: translate(-100%, 75%);
-  }
-
-  &:hover {
-    color: black;
-  }
+  font-size: 1.9rem;
+  z-index: -1;
 `
 
 export const ListedHamburgerMenu = styled.div`
@@ -121,14 +116,22 @@ export const ListedHamburgerMenu = styled.div`
   gap: 2px;
   top: 110px;
   position: absolute;
-  left: 0;
-  border-radius: 0 0 15% 15%;
+  border-radius: 0 0 0 20px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+
+  @media screen and (max-width: 1024px) {
+    right: 0px;
+  }
+
+  @media screen and (max-width: 702px) {
+    border-radius: 0 0 0 30px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+  }
 `
 
 export const Menu = styled.div`
   display: flex;
-  padding: 0px 20px;
+  padding: 20px 20px;
   margin-right: 25px;
   
   @media screen and (max-width: 1024px) {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { beigeColor, orangeColor, purpleColor } from "../../utils/utils";
+import { blackColor } from "../../utils/utils";
 import { css } from "styled-components";
 
 export const ContactFormContainer = styled.div`
@@ -10,7 +10,7 @@ export const ContactFormContainer = styled.div`
   ${(props) =>
     props.wrapper &&
     css`
-      box-shadow: 0 0 20px 0 ${purpleColor};
+      box-shadow: 0 0 20px 0 ${blackColor};
       > * {
         padding: 1em;
       }
@@ -25,15 +25,6 @@ export const ContactFormContainer = styled.div`
       }
     `}
 `;
-
-// export const FormHeader = styled.h3`
-//     color: ${purpleColor};
-//     font-size: 1.9rem;
-//     text-align: center;
-//     @media (min-width: 700px) {
-//         text-align: left;
-//     }
-// `
 
 export const Form = styled.form`
   display: grid;
@@ -76,7 +67,6 @@ export const StyledButton = styled.button`
   color: #fff;
   padding: 1rem;
   text-transform: uppercase;
-  /* width: 100%; */
 
   &:hover,
   &:focus {

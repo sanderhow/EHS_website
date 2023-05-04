@@ -4,13 +4,19 @@ import ParallaxBackground from "../../Components/ParallaxBackground/ParallaxBack
 import { getCategory, PriceCategory } from "./utils";
 
 function Cennik() {
-  const [category, setCategory] = useState(PriceCategory.Wstepne);
+  const [category, setCategory] = useState(PriceCategory.GlownaCennik);
 
   return (
     <>
       <ParallaxBackground src={"assets/cennik.jpg"} label={"Cennik"} />
 
       <P.PriceButtonsWrapper>
+      <P.PriceButton
+          isActive={category === PriceCategory.GlownaCennik}
+          onClick={() => setCategory(PriceCategory.GlownaCennik)}
+        >
+          Usługi
+        </P.PriceButton>
         <P.PriceButton
           isActive={category === PriceCategory.Wstepne}
           onClick={() => setCategory(PriceCategory.Wstepne)}

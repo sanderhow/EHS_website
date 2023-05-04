@@ -5,7 +5,7 @@ function GlownaCennik() {
   return (
     <>
       <P.PriceCardTitle>
-        <P.PriceCardHeader>Cennik</P.PriceCardHeader>
+        <P.PriceCardHeader>Usługi</P.PriceCardHeader>
       </P.PriceCardTitle>
       <P.PriceCardWrapper>
         <P.Card>
@@ -43,7 +43,7 @@ function GlownaCennik() {
         <P.Card>
           <P.CardHeader3>Uśmiech i dobre słowo :)</P.CardHeader3>
           <P.CardHeader1>0 zł</P.CardHeader1>
-          <P.CardParagraph></P.CardParagraph>
+          <P.CardParagraph>zawsze</P.CardParagraph>
           <P.CardButton>Zamawiam</P.CardButton>
         </P.Card>
       </P.PriceCardWrapper>

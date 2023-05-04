@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { blackColor } from "../../../utils/utils";
 
 export const TrainingWrapper = styled.div`
   position: relative;
@@ -10,6 +9,11 @@ export const PriceCardWrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
+  
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Card = styled.div`
@@ -26,6 +30,10 @@ export const Card = styled.div`
   &:hover {
     transform: translateY(-10px);
     transition: 0.3s;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 200px;
   }
 `;
 
@@ -65,10 +73,16 @@ export const CardButton = styled.button`
 
 export const PriceCardTitle = styled.div`
   margin: 40px 0 30px 50px;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 `;
 
 export const PriceCardHeader = styled.h3`
   font-family: "Poppins", sans-serif;
   font-size: 2.2rem;
   text-align: center;
+  padding: 0 103px;
 `;

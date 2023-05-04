@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Carousel, CarouselItem } from "./Carousel";
 import * as P from "./partsStronaGlowna";
 
@@ -63,20 +63,20 @@ const StronaGlowna = () => {
       <P.TrustedClients>
         <P.TrustedClientsHeader>Zaufali nam między innymi</P.TrustedClientsHeader>
         <P.TrustedClientsLogos>
-          <P.TrustedClientsImage1 src="assets/gestamp_logo.png" />
-          <P.TrustedClientsImage src="assets/adidas_logo.png" />
-          <P.TrustedClientsImage2 src="assets/nestle_logo.png" />
-          <P.TrustedClientsImage src="assets/bird_logo.png" />
-          <P.TrustedClientsImage src="assets/sonoco_logo.png" />
+          <P.TrustedClientsLogo1 src="assets/gestamp_logo.png" />
+          <P.TrustedClientsLogo2 src="assets/adidas_logo.png" />
+          <P.TrustedClientsLogo3 src="assets/nestle_logo.png" />
+          <P.TrustedClientsLogo2 src="assets/bird_logo.png" />
+          <P.TrustedClientsLogo2 src="assets/sonoco_logo.png" />
         </P.TrustedClientsLogos>
       </P.TrustedClients>
 
       <Carousel>
         <CarouselItem>
-          <P.CarouselTextWrapper>
-            <P.CarouselItemHeder>
-              <P.CarouselAvatar2 src="assets/nestle_logo.png" />
-            </P.CarouselItemHeder>
+          <P.CarouselWrapper>
+            <P.CarouselAvatarWrapper>
+              <P.CarouselAvatar src="assets/sonoco_logo.png" />
+            </P.CarouselAvatarWrapper>
             <P.CarouselItemParagraph>
               Firma "SM group" dała się poznać jako rzetelny partner
               dostosowujący się do potrzeb naszej firmy i wspierający w
@@ -85,38 +85,37 @@ const StronaGlowna = () => {
             <P.CarouselItemSignature>
               Magdalena Kodybo, Kierownik Serwisu
             </P.CarouselItemSignature>
-          </P.CarouselTextWrapper>
+          </P.CarouselWrapper>
         </CarouselItem>
         <CarouselItem>
-          <P.CarouselTextWrapper>
-            <P.CarouselItemHeder>
-            <P.CarouselAvatar2 src="assets/adidas_logo.png" />
-            </P.CarouselItemHeder>
+          <P.CarouselWrapper>
+            <P.CarouselAvatarWrapper>
+            <P.CarouselAvatar src="assets/adidas_logo.png" />
+            </P.CarouselAvatarWrapper>
             <P.CarouselItemParagraph>
               Szkolenia prowadzone są z zaangażowaniem zarówno stacjonarne i
               on-line, a materiały odpowiadają najnowszym standardom rynkowym.
-              Proces szkoleń jest doskonale przygotowany i prowadzony zgodnie z
-              ustalonymi potrzebami.
+              Proces szkoleń jest doskonale przygotowany i prowadzony.
             </P.CarouselItemParagraph>
             <P.CarouselItemSignature>
-              Marzena Osowska Matasz, Talent Acquisition and Development Manager
+              Marzena Osowska Matasz, Development Manager
             </P.CarouselItemSignature>
-          </P.CarouselTextWrapper>
+          </P.CarouselWrapper>
         </CarouselItem>
         <CarouselItem>
-          <P.CarouselTextWrapper>
-            <P.CarouselItemHeder>
-              <P.CarouselAvatar2 src="assets/nikon_logo.png" />
-            </P.CarouselItemHeder>
+          <P.CarouselWrapper>
+            <P.CarouselAvatarWrapper>
+              <P.CarouselAvatar src="assets/bird_logo.png" />
+            </P.CarouselAvatarWrapper>
             <P.CarouselItemParagraph>
               Jestem bardzo zadowolony ze współpracy z firmą SM group. Nie ma
               problemu z kontaktem i umówieniem spotkania. Bardzo sprawnie i
-              fachowo prowadzą szkolenia. Polecam
+              fachowo prowadzą szkolenia. Polecam tę firme i stale korzystam z ich usług.
             </P.CarouselItemParagraph>
             <P.CarouselItemSignature>
               Stanisław Sasim, Kierownik Serwisu
             </P.CarouselItemSignature>
-          </P.CarouselTextWrapper>
+          </P.CarouselWrapper>
         </CarouselItem>
       </Carousel>
     </P.Wrapper>

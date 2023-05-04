@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import * as P from "./partsNavbar";
 import { useNavigate } from "react-router-dom";
 
 function Navbar(props) {
   const [isClicked, setIsClicked] = useState(false);
   const navigate = useNavigate();
+  const hamburgerButton = useRef(null);
 
   const handleClick = (event) => {
     setIsClicked(!isClicked);
@@ -14,6 +15,20 @@ function Navbar(props) {
     navigate("/");
   };
 
+  const handleTurnOffHamburger = (event) => {
+    console.log(event.target);
+    console.log(hamburgerButton.current);
+    if (isClicked && event.target !== hamburgerButton.current) {
+      setIsClicked(false);
+
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("click", handleTurnOffHamburger); 
+    return () => window.removeEventListener("click", handleTurnOffHamburger);
+  });
+
   return (
     <>
       <P.PrimaryNav>
@@ -22,7 +37,9 @@ function Navbar(props) {
           src="assets/logo_transparent.png"
           alt="logo"
         />
-        <P.Hamburger size={50} onClick={handleClick} />
+        <P.HamburgerWrapper ref={hamburgerButton} size={50} onClick={handleClick}>
+          <P.Hamburger />
+        </P.HamburgerWrapper >
         {isClicked && (
           <P.ListedHamburgerMenu>
             <P.MenuLink

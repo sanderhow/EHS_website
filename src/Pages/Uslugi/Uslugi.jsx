@@ -75,6 +75,7 @@ function Uslugi() {
           <P.Paragraph>Stacjonarne</P.Paragraph>
           <P.Paragraph>On-line</P.Paragraph>
           <P.Hyperlink
+          
             to="/szkolenia"
             activeStyle
           >Dowiedz się więcej</P.Hyperlink>
@@ -94,14 +95,20 @@ function Uslugi() {
             to="/szkolenia"
             activeStyle
           >
-            Dowiedz się więcej</P.Hyperlink>
+            Dowiedz się więcej
+            </P.Hyperlink>
         </P.TextWrapper1>
       </P.ServiceCardWrapper>
 
       <P.ServiceCardWrapper>
         <P.TextWrapper>
           <P.Header>Obsługa BHP</P.Header>
-          <P.Hyperlink>Dowiedz się więcej</P.Hyperlink>
+          <P.Hyperlink
+            to="/nadzor"
+            activeStyle
+          >
+            Dowiedz się więcej
+          </P.Hyperlink>
         </P.TextWrapper>
         <P.AvatarWrapper1 ref={element3} isObserved={isObserved3}>
           <P.AvatarUslugi img src="assets/obsluga-bhp.jpg" />
@@ -114,7 +121,12 @@ function Uslugi() {
         </P.AvatarWrapper2>
         <P.TextWrapper1>
           <P.Header>Obsługa P.POŻ.</P.Header>
-          <P.Hyperlink>Dowiedz się więcej</P.Hyperlink>
+          <P.Hyperlink
+            to="/cennik"
+            activeStyle
+          >
+            Dowiedz się więcej
+          </P.Hyperlink>
         </P.TextWrapper1>
       </P.ServiceCardWrapper>
 

@@ -13,8 +13,8 @@ export const BackgroundImage = styled.img`
 `;
 
 export const Header = styled.div`
-  font-size: 5.2rem;
-  text-shadow: 1px 1px grey;
+  font-size: 6.2rem;
+  text-shadow: 0 20px 40px -25px rgba(#818181);
   font-weight: bold;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -37,12 +37,20 @@ export const Header = styled.div`
 
 export const WrapperDeclaration = styled.div`
   margin: 50px 0 0;
+
+  @media screen and (max-width: 700px) {
+    margin: 5px;
+  }
 `;
 
 export const HeaderDeclaration = styled.h1`
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2.1rem;
+
+  @media screen and (max-width: 700px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const ParagraphDeclaration = styled.p`
@@ -51,10 +59,13 @@ export const ParagraphDeclaration = styled.p`
   font-size: 1.2rem;
   font-weight: bold;
   color: ${blackColor};
+
+  @media screen and (max-width: 700px) {
+    font-size: 1.2rem;
+  }
 `;
 
 //Offer Icons Section//
-
 export const OfferWrapper = styled.div`
   background-size: cover;
 `;
@@ -76,7 +87,6 @@ export const Avatar = styled.div`
   padding: 10px;
   font-size: 60px;
   color: #6c8fac;
-  /* color: #E6343B; */
   transition: transform 1s ease-in;
 `;
 
@@ -104,6 +114,7 @@ export const OfferItem = styled.div`
   @media screen and (max-width: 1024px) {
     padding: 10px;
     margin: 10px;
+    font-size: 1.2rem;
   }
 `;
 
@@ -114,6 +125,7 @@ export const OfferParagraph = styled.p`
 
   @media screen and (max-width: 1024px) {
     padding: 10px;
+    font-size: 0.9rem;
   }
 `;
 
@@ -137,6 +149,7 @@ export const TrustedClientsHeader = styled.h1`
   @media screen and (max-width: 1024px) {
     margin: 50px 0 35px 0px;
     text-align: center;
+    font-size: 1.5rem;
   }
 `;
 
@@ -153,78 +166,80 @@ export const TrustedClientsLogos = styled.div`
   }
 `;
 
-export const TrustedClientsImage = styled.img`
-  padding: 30px;
-  width: 165px;
-  height: 100px;
-
-  &:hover {
-    transform: translateY(-20px);
-    transition: 0.3s;
-  }
-`;
-
-export const TrustedClientsImage1 = styled.img`
+export const TrustedClientsLogo1 = styled.img`
   width: 210px;
   height: 60px;
   background: transparent;
-  padding: 30px;
+  padding: 30px 15px;
 
   &:hover {
     transform: translateY(-20px);
     transition: 0.3s;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 190px;
+    height: 40px;
+    padding: 10px;
+  }
 `;
 
-export const TrustedClientsImage2 = styled.img`
-  padding: 14px 30px;
+export const TrustedClientsLogo2 = styled.img`
+  padding: 14px 15px;
+  width: 175px;
+  height: 120px;
+
+  &:hover {
+    transform: translateY(-20px);
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 145px;
+    height: 80px;
+    padding: 10px;
+  }
+`;
+
+export const TrustedClientsLogo3 = styled.img`
+  padding: 30px 15px 0;
   width: 165px;
-  height: 130px;
+  height: 140px;
 
   &:hover {
     transform: translateY(-20px);
     transition: 0.3s;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 130px;
+    height: 100px;
+    padding: 10px;
+  }
 `;
+
 
 // Carousel Wrapper with Clients Recommendations//
 
-export const CarouselTextWrapper = styled.div`
-  /* height: 300px; */
+export const CarouselWrapper = styled.div`
   position: relative;
   width: 100%;
   margin: 0 100px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 20px 60px;
+  }
 `;
 
-export const CarouselItemHeder = styled.div`
-  width: 100px;
-  height: 100px;
+export const CarouselAvatarWrapper = styled.div`
   display: block;
   position: relative;
-  font-size: 2.2rem;
-  font-weight: 900;
   justify-content: center;
-`;
 
-export const CarouselAvatar1 = styled.img`
-  width: 200px;
-  height: 70px;
-  background: transparent;
-  padding: 30px;
+  @media screen and (max-width: 1024px) {
+    margin: 20px 60px;
+  }
 `;
-
-export const CarouselAvatar2 = styled.img`
-  width: 140px;
-  height: 70px;
-  background: transparent;
-`;
-
-export const CarouselAvatar3 = styled.img`
-  width: 180px;
-  height: 90px;
-  background: transparent;
-`;
-
 
 export const CarouselItemParagraph = styled.div`
   white-space: pre-wrap;
@@ -235,9 +250,34 @@ export const CarouselItemParagraph = styled.div`
   line-height: 1.3;
 `;
 
+export const CarouselAvatar = styled.img`
+  padding: 14px 15px 30px;
+  width: 175px;
+  height: 120px;
+
+  &:hover {
+    transform: translateY(-20px);
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 145px;
+    height: 80px;
+    padding: 10px;
+  }
+`;
+
 export const CarouselItemSignature = styled.div`
   text-align: left;
+  font-weight: 800;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   padding-top: 20px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 20px 0;
+    white-space: pre-wrap;
+    padding: 0;
+    word-break: break-all;
+  }
 `;

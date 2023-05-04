@@ -3,6 +3,7 @@ import NadzorBHP from "./CennikKategorie/NadzorBHP";
 import OcenaRyzykaZaw from "./CennikKategorie/OcenaRyzykaZaw";
 import SzkoleniaOkresowe from "./CennikKategorie/SzkoleniaOkresowe";
 import SzkoleniaWstepne from "./CennikKategorie/SzkoleniaWstepne";
+import GlownaCennik from "./GlownaCennik";
 
 export const PriceCategory = {
   Wstepne: "wstepne",
@@ -10,10 +11,13 @@ export const PriceCategory = {
   AnalizaA3: "analizaA3",
   OcenaRyzyka: "ocenaRyzyka",
   Nadzor: "nadzor",
+  GlownaCennik: "glownaCennik",
 };
 
 export function getCategory(categoryName) {
   switch (categoryName) {
+    case PriceCategory.GlownaCennik:
+      return <GlownaCennik />;
     case PriceCategory.Wstepne:
       return <SzkoleniaWstepne />;
     case PriceCategory.Okresowe:
@@ -25,6 +29,6 @@ export function getCategory(categoryName) {
     case PriceCategory.Nadzor:
       return <NadzorBHP />;
     default:
-      return <SzkoleniaWstepne />;
+      return <SzkoleniaWstepne />;  
   }
 }

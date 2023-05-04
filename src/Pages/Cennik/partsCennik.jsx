@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import { blackColor, orangeColor } from "../../utils/utils";
+import { blackColor } from "../../utils/utils";
 
 export const PriceButtonsWrapper = styled.div`
   position: relative;
   display: flex;
   margin: 70px 0 0 50px;
   justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    margin: 35px 55px;
+  }
 `;
 export const PriceButton = styled.button`
   background-color: ${blackColor};
@@ -25,7 +30,10 @@ export const PriceButton = styled.button`
   &:hover {
     color: white;
     background-color: #47b5ff;
-    /* border-radius: 30px; */
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 2px;
   }
 `;
 

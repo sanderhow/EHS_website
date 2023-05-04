@@ -9,6 +9,7 @@ import Firma from "./Pages/Firma/Firma";
 import Kontakt from "./Pages/Kontakt/Kontakt";
 import Navbar from "./Components/Navbar";
 import Cennik from "./Pages/Cennik/Cennik";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -51,6 +52,7 @@ function App() {
     <>
       <A.AppState>
         <BrowserRouter>
+        <ScrollToTop/>
         <A.ShortContact onMouseEnter={turnOffListedMenu}>
           <A.Text>Zadzwoń do nas + 48 508 762 858</A.Text>
           <A.Text>Napisz do nas: kontakt@smsafetygroup.pl</A.Text>
@@ -66,7 +68,7 @@ function App() {
             serviceTitle={serviceTitle}
           />
           <Routes>
-            <Route path="/" element={<StronaGlowna />} />
+            <Route exact path="/" element={<StronaGlowna />} />
             <Route path="/uslugi" element={<Uslugi />} />
             <Route path="/szkolenia" element={<Szkolenia />} />
             <Route path="/nadzor" element={<Nadzor />} />

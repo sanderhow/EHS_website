@@ -54,7 +54,7 @@ export function Carousel(props) {
               updateIndex(activeIndex - 1);
             }}
           >
-            Prev
+            {"<"}
           </P.Button>
           {React.Children.map(props.children, (child, index) => {
             return (
@@ -72,7 +72,7 @@ export function Carousel(props) {
               updateIndex(activeIndex + 1);
             }}
           >
-            Next
+            {">"}
           </P.Button>
         </P.Indicators>
       </P.Carousel>

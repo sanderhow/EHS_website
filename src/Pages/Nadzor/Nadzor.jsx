@@ -1,6 +1,7 @@
 import React from "react";
 import * as P from "./partsNadzor";
 import ParallaxBackground from "../../Components/ParallaxBackground/ParallaxBackground";
+import { messages } from '../../utils/pl';
 
 function Nadzor() {
   return (
@@ -10,12 +11,7 @@ function Nadzor() {
       <P.Outsourcing>
         <P.OutsourcingHeader>Outsourcing BHP</P.OutsourcingHeader>
         <P.OutsourcingText>
-          Zapraszamy Państwa do korzystania z usług, jakie świadczy nasza firma.
-          Zajmujemy się kompleksową obsługą firm, zakładów pracy i instytucji w
-          zakresie bezpieczeństwa i higieny pracy. Podstawowym i głównym celem
-          naszej firmy jest promowanie bezpiecznego miejsca pracy oraz
-          wprowadzanie najbardziej korzystnych rozwiązań i zasad w zakresie
-          Bezpieczeństwa i Higieny Pracy.
+          {messages.nadzor.outsourcingText}
         </P.OutsourcingText>
       </P.Outsourcing>
 

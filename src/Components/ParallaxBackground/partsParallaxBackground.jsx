@@ -31,6 +31,7 @@ export const ParallaxLayer1Price = styled.div`
     background-repeat: no-repeat;
     width: 100%;
   }
+  
   @media screen and (max-width: 700px) {
     min-height: 280px;
     object-fit: cover;

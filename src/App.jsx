@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import * as A from "./partsApp";
+import * as P from "./partsApp";
 import StronaGlowna from "./Pages/StronaGlowna/StronaGlowna";
 import Uslugi from "./Pages/Uslugi/Uslugi";
 import Szkolenia from "./Pages/Szkolenia/Szkolenia";
@@ -12,21 +12,21 @@ import Cennik from "./Pages/Cennik/Cennik";
 import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isNavBarHovered, setIsNavBarHovered] = useState(false);
   const [isHoveredMenuListed, setIsHoveredMenuListed] = useState(false);
-  const [rect, setRect] = useState({});
+  const [menuLinkRect, setMenuLinkRect] = useState({});
   const [serviceTitle, setServiceTitle] = useState('null');
 
   const handleMouseHover = (event) => {
     const hoveredElement = event.target;
     setServiceTitle(event.target.innerHTML);
-    setRect(hoveredElement.getBoundingClientRect());
-    setIsHovered(true);
+    setMenuLinkRect(hoveredElement.getBoundingClientRect());
+    setIsNavBarHovered(true);
   };
 
   const handleMouseLeave = (event) => {
     if (!isHoveredMenuListed) {
-      setIsHovered(false);
+      setIsNavBarHovered(false);
     } 
   };
 
@@ -35,32 +35,32 @@ function App() {
   };
 
   const handleMouseLeaveListedMenu = (event) => {
-    setIsHovered(false);
-    if (!isHovered) {
+    setIsNavBarHovered(false);
+    if (!isNavBarHovered) {
       setIsHoveredMenuListed(false);
     }
   };
 
   const turnOffListedMenu = () => {
-    setIsHovered(false);
+    setIsNavBarHovered(false);
   };
 
   return (
     <>
-      <A.AppState>
+      <P.AppState>
         <BrowserRouter>
         <ScrollToTop/>
-        <A.ShortContact onMouseEnter={turnOffListedMenu}>
-          <A.Text>Zadzwoń do nas + 48 508 762 858</A.Text>
-          <A.Text>Napisz do nas: kontakt@smsafetygroup.pl</A.Text>
-        </A.ShortContact>
+        <P.ShortContact onMouseEnter={turnOffListedMenu}>
+          <P.Text>Zadzwoń do nas + 48 508 762 858</P.Text>
+          <P.Text>Napisz do nas: kontakt@smsafetygroup.pl</P.Text>
+        </P.ShortContact>
           <Navbar
-            Hover={isHovered}
-            HoverOn={handleMouseHover}
-            LeaveHover={handleMouseLeave}
-            Hover2={handleMouseHoveredListedMenu}
-            LeaveHover2={handleMouseLeaveListedMenu}
-            Rect={rect}
+            isNavBarHovered={isNavBarHovered}
+            hoverOnMenuLink={handleMouseHover}
+            leaveHoverOnMenuLink={handleMouseLeave}
+            hoverListedMenu={handleMouseHoveredListedMenu}
+            leaveHoverListedMenu={handleMouseLeaveListedMenu}
+            menuLinkRect={menuLinkRect}
             turnOffListedMenu={turnOffListedMenu}
             serviceTitle={serviceTitle}
           />
@@ -74,8 +74,8 @@ function App() {
             <Route path="/kontakt" element={<Kontakt />} />
           </Routes>
         </BrowserRouter>
-      </A.AppState>
-      <A.Footer>© COPYRIGHT {new Date().getFullYear()}</A.Footer>
+      </P.AppState>
+      <P.Footer>© COPYRIGHT {new Date().getFullYear()}</P.Footer>
     </>
   );
 }

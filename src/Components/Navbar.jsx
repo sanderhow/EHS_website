@@ -7,7 +7,7 @@ function Navbar(props) {
   const navigate = useNavigate();
   const hamburgerButton = useRef(null);
 
-  const handleClick = () => {
+  const handleClickHamburger = () => {
     setIsAdditionalMenuOpen(!isAdditionalMenuOpen);
   };
 
@@ -33,7 +33,7 @@ function Navbar(props) {
           src="assets/logo_transparent.png"
           alt="logo"
         />
-        <P.HamburgerWrapper ref={hamburgerButton} size={50} onClick={handleClick}>
+        <P.HamburgerWrapper ref={hamburgerButton} size={50} onClick={handleClickHamburger}>
           <P.Hamburger />
         </P.HamburgerWrapper >
 
@@ -42,48 +42,48 @@ function Navbar(props) {
             <P.MenuLink
               to="/uslugi"
               activeStyle
-              onMouseOver={props.HoverOn}
-              onMouseLeave={props.LeaveHover}
+              onMouseOver={props.hoverOnMenuLink}
+              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Usługi
             </P.MenuLink>
             <P.MenuLink
               to="/szkolenia"
               activeStyle
-              onMouseOver={props.HoverOn}
-              onMouseLeave={props.LeaveHover}
+              onMouseOver={props.hoverOnMenuLink}
+              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Szkolenia
             </P.MenuLink>
             <P.MenuLink
               to="/nadzor"
               activeStyle
-              onMouseOver={props.HoverOn}
-              onMouseLeave={props.LeaveHover}
+              onMouseOver={props.hoverOnMenuLink}
+              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Stały nadzór BHP
             </P.MenuLink>
             <P.MenuLink
               to="/cennik"
               activeStyle
-              onMouseOver={props.HoverOn}
-              onMouseLeave={props.LeaveHover}
+              onMouseOver={props.hoverOnMenuLink}
+              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Cennik
             </P.MenuLink>
             <P.MenuLink
               to="/firma"
               activeStyle
-              onMouseOver={props.HoverOn}
-              onMouseLeave={props.LeaveHover}
+              onMouseOver={props.hoverOnMenuLink}
+              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               O nas
             </P.MenuLink>
             <P.MenuLink
               to="/kontakt"
               activeStyle
-              onMouseOver={props.HoverOn}
-              onMouseLeave={props.LeaveHover}
+              onMouseOver={props.hoverOnMenuLink}
+              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Kontakt
             </P.MenuLink>
@@ -91,13 +91,13 @@ function Navbar(props) {
         )}
 
         <P.Menu>
-          {props.Hover && props.serviceTitle === "Usługi" && (
+          {props.isNavBarHovered && props.serviceTitle === "Usługi" && (
             <>
               <P.DropdownMenu
-                onMouseOver={props.Hover2}
-                onMouseLeave={props.LeaveHover2}
-                x={props.Rect.x}
-                y={props.Rect.y}
+                onMouseOver={props.hoverListedMenu}
+                onMouseLeave={props.leaveHoverListedMenu}
+                x={props.menuLinkRect.x}
+                y={props.menuLinkRect.y}
                 >
                   <P.DropdownMenuLink
                   to="/szkolenia"
@@ -131,48 +131,48 @@ function Navbar(props) {
           <P.MenuLink
             to="/uslugi"
             activeStyle
-            onMouseOver={props.HoverOn}
-            onMouseLeave={props.LeaveHover}
+            onMouseOver={props.hoverOnMenuLink}
+            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Usługi
           </P.MenuLink>
           <P.MenuLink
             to="/szkolenia"
             activeStyle
-            onMouseOver={props.HoverOn}
-            onMouseLeave={props.LeaveHover}
+            onMouseOver={props.hoverOnMenuLink}
+            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Szkolenia
           </P.MenuLink>
           <P.MenuLink
             to="/nadzor"
             activeStyle
-            onMouseOver={props.HoverOn}
-            onMouseLeave={props.LeaveHover}
+            onMouseOver={props.hoverOnMenuLink}
+            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Stały nadzór BHP
           </P.MenuLink>
           <P.MenuLink
             to="/firma"
             activeStyle
-            onMouseOver={props.HoverOn}
-            onMouseLeave={props.LeaveHover}
+            onMouseOver={props.hoverOnMenuLink}
+            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             O nas
           </P.MenuLink>
           <P.MenuLink
             to="/cennik"
             activeStyle
-            onMouseOver={props.HoverOn}
-            onMouseLeave={props.LeaveHover}
+            onMouseOver={props.hoverOnMenuLink}
+            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Cennik
           </P.MenuLink>
           <P.MenuLink
             to="/kontakt"
             activeStyle
-            onMouseOver={props.HoverOn}
-            onMouseLeave={props.LeaveHover}
+            onMouseOver={props.hoverOnMenuLink}
+            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Kontakt
           </P.MenuLink>

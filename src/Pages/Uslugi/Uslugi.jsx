@@ -19,8 +19,6 @@ function Uslugi() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry);
-
         if (entry.isIntersecting) {
           switch (entry.target) {
             case element1.current:
@@ -75,7 +73,6 @@ function Uslugi() {
           <P.Paragraph>Stacjonarne</P.Paragraph>
           <P.Paragraph>On-line</P.Paragraph>
           <P.Hyperlink
-          
             to="/szkolenia"
             activeStyle
           >Dowiedz się więcej</P.Hyperlink>

@@ -122,10 +122,11 @@ export const ListedHamburgerMenu = styled.div`
   @media screen and (max-width: 1024px) {
     right: 0px;
   }
-
+  
   @media screen and (max-width: 702px) {
     border-radius: 0 0 0 30px;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+    width: 100%;
   }
 `
 

@@ -44,6 +44,7 @@ export const Header = styled.h1`
 
   @media screen and (max-width: 1200px) {
     font-size: 2.1rem;  
+    margin: 0 10px;
   }
 
   @media screen and (max-width: 700px) {

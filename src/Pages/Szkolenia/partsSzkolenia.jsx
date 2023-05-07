@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { blackColor } from "../../utils/utils";
+import { NavLink as Link } from 'react-router-dom';
 
 export const WrapperTrainings = styled.div`
   display: flex;
@@ -57,7 +58,7 @@ export const TrainingText = styled.p`
   font-weight: normal;
 `;
 
-export const TrainingButton = styled.button`
+export const TrainingHyperlink = styled(Link)`
   display: block;
   width: 100%;
   border: none;
@@ -67,6 +68,7 @@ export const TrainingButton = styled.button`
   color: white;
   cursor: pointer;
   text-align: center;
+  text-decoration: none;
 
   /* On mouse-over */
   &:hover {

@@ -23,7 +23,12 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingButton>Aktualne szkolenia wstępne</P.TrainingButton>
+              <P.TrainingHyperlink
+                to="/cennik"
+                activeStyle>
+                Aktualne szkolenia wstępne
+                </P.TrainingHyperlink>
+                
             </P.TrainingParagraph>
           </P.TrainingOffer>
 
@@ -42,7 +47,11 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingButton>Aktualne szkolenia okresowe</P.TrainingButton>
+              <P.TrainingHyperlink
+                to="/cennik"
+                activeStyle>
+                Aktualne szkolenia okresowe
+                </P.TrainingHyperlink>
             </P.TrainingParagraph>
           </P.TrainingOffer>
         </P.TrainingBox>
@@ -62,9 +71,11 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingButton>
+              <P.TrainingHyperlink
+                to="/cennik"
+                activeStyle>
                 Aktualne szkolenia P.POZ i pierwszej pomocy
-              </P.TrainingButton>
+              </P.TrainingHyperlink>
             </P.TrainingParagraph>
           </P.TrainingOffer>
 
@@ -83,9 +94,11 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingButton>
+              <P.TrainingHyperlink
+                to="/cennik"
+                activeStyle>
                 Zapoznaj się z ofertą szkolenia
-              </P.TrainingButton>
+              </P.TrainingHyperlink>
             </P.TrainingParagraph>
           </P.TrainingOffer>
         </P.TrainingBox>

@@ -14,21 +14,16 @@ function Uslugi() {
   const element2 = useRef(null);
   const element3 = useRef(null);
   const element4 = useRef(null);
-  const elementArray = [element1, element2, element3, element4];
+  const leftArray = [element2, element4];
+  const rightArray = [element1, element3];
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const leftObserver = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           switch (entry.target) {
-            case element1.current:
-              setIsObserved1(true);
-              break;
             case element2.current:
               setIsObserved2(true);
-              break;
-            case element3.current:
-              setIsObserved3(true);
               break;
             case element4.current:
               setIsObserved4(true);
@@ -36,33 +31,41 @@ function Uslugi() {
             default:
               console.log("No matching DOM element");
           }
-        } else {
+        }
+        },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    const rightObserver = new IntersectionObserver(
+      ([entry]) => {
+        console.log(`entry:${JSON.stringify(entry,null,4)}`);
+        if (entry.isIntersecting) {
           switch (entry.target) {
             case element1.current:
-              setIsObserved1(false);
-              break;
-            case element2.current:
-              setIsObserved2(false);
+              setIsObserved1(true);
               break;
             case element3.current:
-              setIsObserved3(false);
-              break;
-            case element4.current:
-              setIsObserved4(false);
+              setIsObserved3(true);
               break;
             default:
               console.log("No matching DOM element");
           }
         }
-      },
+        },
       {
         threshold: 0.2,
       }
     );
-    elementArray.forEach((element) => observer.observe(element.current));
+    leftArray.forEach((element) => leftObserver.observe(element.current));
+    rightArray.forEach((element) => rightObserver.observe(element.current));
 
-    return () => observer.disconnect();
-  }, [elementArray]);
+    return () => {
+      leftObserver.disconnect();
+      rightObserver.disconnect();
+    }
+  }, [leftArray, rightArray]);
 
   return (
     <>
@@ -78,13 +81,14 @@ function Uslugi() {
           >Dowiedz się więcej</P.Hyperlink>
         </P.TextWrapper>
         <P.AvatarWrapper1 ref={element1} isObserved={isObserved1}>
-          <P.AvatarUslugi img src="assets/szkolenia-wstepne.jpg" />
+          <P.AvatarUslugi  src="assets/szkolenia-wstepne.jpg" />
         </P.AvatarWrapper1>
       </P.ServiceCardWrapper>
 
       <P.ServiceCardWrapper>
         <P.AvatarWrapper2 ref={element2} isObserved={isObserved2}>
-          <P.AvatarUslugi img src="assets/szkolenia-okresowe.jpg" />
+          <P.AvatarUslugi  
+          src="assets/szkolenia-okresowe.jpg" />
         </P.AvatarWrapper2>
         <P.TextWrapper1>
           <P.Header>Szkolenia BHP Okresowe</P.Header>
@@ -108,13 +112,13 @@ function Uslugi() {
           </P.Hyperlink>
         </P.TextWrapper>
         <P.AvatarWrapper1 ref={element3} isObserved={isObserved3}>
-          <P.AvatarUslugi img src="assets/obsluga-bhp.jpg" />
+          <P.AvatarUslugi src="assets/obsluga-bhp.jpg" />
         </P.AvatarWrapper1>
       </P.ServiceCardWrapper>
 
       <P.ServiceCardWrapper>
         <P.AvatarWrapper2 ref={element4} isObserved={isObserved4}>
-          <P.AvatarUslugi img src="assets/obsluga-ppoz.jpg" />
+          <P.AvatarUslugi src="assets/obsluga-ppoz.jpg" />
         </P.AvatarWrapper2>
         <P.TextWrapper1>
           <P.Header>Obsługa P.POŻ.</P.Header>

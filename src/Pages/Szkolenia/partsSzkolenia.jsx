@@ -42,8 +42,12 @@ export const TrainingParagraph = styled.p`
   line-break: strict;
   
   @media screen and (max-width: 1200px) {
-    width: 100%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }
 `;
 
@@ -60,7 +64,6 @@ export const TrainingText = styled.p`
 
 export const TrainingHyperlink = styled(Link)`
   display: block;
-  width: 100%;
   border: none;
   background-color: #6c8fac;
   padding: 14px 28px;

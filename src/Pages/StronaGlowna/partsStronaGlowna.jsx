@@ -158,6 +158,9 @@ export const TrustedClientsLogos = styled.div`
   position: relative;
   margin-left: 110px;
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media screen and (max-width: 1024px) {
     display: flex;

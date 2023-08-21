@@ -13,7 +13,6 @@ import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   const [isNavBarHovered, setIsNavBarHovered] = useState(false);
-  const [isHoveredMenuListed, setIsHoveredMenuListed] = useState(false);
   const [menuLinkRect, setMenuLinkRect] = useState({});
   const [serviceTitle, setServiceTitle] = useState('null');
 
@@ -24,21 +23,8 @@ function App() {
     setIsNavBarHovered(true);
   };
 
-  const handleMouseLeave = (event) => {
-    if (!isHoveredMenuListed) {
-      setIsNavBarHovered(false);
-    } 
-  };
-
-  const handleMouseHoveredListedMenu = (event) => {
-    setIsHoveredMenuListed(true);
-  };
-
   const handleMouseLeaveListedMenu = (event) => {
     setIsNavBarHovered(false);
-    if (!isNavBarHovered) {
-      setIsHoveredMenuListed(false);
-    }
   };
 
   const turnOffListedMenu = () => {
@@ -57,8 +43,6 @@ function App() {
           <Navbar
             isNavBarHovered={isNavBarHovered}
             hoverOnMenuLink={handleMouseHover}
-            leaveHoverOnMenuLink={handleMouseLeave}
-            hoverListedMenu={handleMouseHoveredListedMenu}
             leaveHoverListedMenu={handleMouseLeaveListedMenu}
             menuLinkRect={menuLinkRect}
             turnOffListedMenu={turnOffListedMenu}

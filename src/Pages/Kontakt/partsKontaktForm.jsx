@@ -29,7 +29,8 @@ export const ContactFormContainer = styled.div`
 export const Form = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 50px;
+  margin-right: 20px;
 `;
 
 export const WrappedGrid = styled.div`

@@ -75,12 +75,10 @@ export const Hyperlink = styled(Link)`
 
 export const AvatarWrapper1 = styled.div`
   width: 50%;
-  transform: translateX(100px);
   opacity: 0;
   ${(props) =>
     props.isObserved &&
     css`
-      transform: translateX(0px);
       transition: 1s;
       opacity: 1;
     `};
@@ -88,12 +86,10 @@ export const AvatarWrapper1 = styled.div`
 
 export const AvatarWrapper2 = styled.div`
   width: 50%;
-  transform: translateX(-100px);
   opacity: 0;
   ${(props) =>
     props.isObserved &&
     css`
-      transform: translateX(0px);
       transition: 1s;
       opacity: 1;
     `};

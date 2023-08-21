@@ -13,7 +13,7 @@ const StronaGlowna = () => {
           To Czas, By Rozwinąć Twój Biznes
         </P.HeaderDeclaration>
         <P.ParagraphDeclaration>
-          Od konsultacji, az po stały nadzór BHP, oferujemy kompleksową obsługę
+          Od konsultacji, aż po stały nadzór BHP, oferujemy kompleksową obsługę
           Twojej firmy.
         </P.ParagraphDeclaration>
       </P.WrapperDeclaration>
@@ -38,8 +38,8 @@ const StronaGlowna = () => {
             </P.Avatar>
             Gwarancja jakości
             <P.OfferParagraph>
-              Posiadamy kilkunastoletnie doświadczenie w branzy, regularnie
-              podnoszac swoje kwalifikacje, w oparciu o zmieniajace sie przepisy
+              Posiadamy kilkunastoletnie doświadczenie w branży, regularnie
+              podnosząc swoje kwalifikacje, w oparciu o zmieniające się przepisy
               prawa i trendy na rynku.
             </P.OfferParagraph>
           </P.OfferItem>
@@ -50,9 +50,9 @@ const StronaGlowna = () => {
             </P.Avatar>
             Gwarantowane zaufanie
             <P.OfferParagraph>
-              Zapewniane usługi wykonywane sa na najwyzszym poziomie. Do kazdego
+              Zapewniane usługi wykonywane są na najwyższym poziomie. Do każdego
               klienta podchodzimy indywidualnie. Wspólnie ustalamy priorytety,
-              strategie i plan dzialania, dobrany do Twoich indywidualnych
+              strategie i plan dzialania, dobrany do Twoich szczególnych
               potrzeb.
             </P.OfferParagraph>
           </P.OfferItem>

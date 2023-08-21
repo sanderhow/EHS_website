@@ -97,6 +97,7 @@ export const HamburgerWrapper = styled.div`
   
   @media screen and (max-width: 1024px) {
     display: flex;
+    cursor: pointer;
   }
 `
 

@@ -32,7 +32,7 @@ export const Indicators = styled.div`
   bottom: 7%;
   left: 45%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 500px) {
     bottom: 2%;
     left: 30%;
   }

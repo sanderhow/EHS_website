@@ -43,7 +43,6 @@ function Navbar(props) {
               to="/uslugi"
               activeStyle
               onMouseOver={props.hoverOnMenuLink}
-              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Usługi
             </P.MenuLink>
@@ -51,7 +50,6 @@ function Navbar(props) {
               to="/szkolenia"
               activeStyle
               onMouseOver={props.hoverOnMenuLink}
-              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Szkolenia
             </P.MenuLink>
@@ -59,7 +57,6 @@ function Navbar(props) {
               to="/nadzor"
               activeStyle
               onMouseOver={props.hoverOnMenuLink}
-              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Stały nadzór BHP
             </P.MenuLink>
@@ -67,7 +64,6 @@ function Navbar(props) {
               to="/cennik"
               activeStyle
               onMouseOver={props.hoverOnMenuLink}
-              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Cennik
             </P.MenuLink>
@@ -75,7 +71,6 @@ function Navbar(props) {
               to="/firma"
               activeStyle
               onMouseOver={props.hoverOnMenuLink}
-              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               O nas
             </P.MenuLink>
@@ -83,7 +78,6 @@ function Navbar(props) {
               to="/kontakt"
               activeStyle
               onMouseOver={props.hoverOnMenuLink}
-              onMouseLeave={props.leaveHoverOnMenuLink}
             >
               Kontakt
             </P.MenuLink>
@@ -132,7 +126,6 @@ function Navbar(props) {
             to="/uslugi"
             activeStyle
             onMouseOver={props.hoverOnMenuLink}
-            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Usługi
           </P.MenuLink>
@@ -140,7 +133,6 @@ function Navbar(props) {
             to="/szkolenia"
             activeStyle
             onMouseOver={props.hoverOnMenuLink}
-            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Szkolenia
           </P.MenuLink>
@@ -148,7 +140,6 @@ function Navbar(props) {
             to="/nadzor"
             activeStyle
             onMouseOver={props.hoverOnMenuLink}
-            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Stały nadzór BHP
           </P.MenuLink>
@@ -156,7 +147,6 @@ function Navbar(props) {
             to="/firma"
             activeStyle
             onMouseOver={props.hoverOnMenuLink}
-            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             O nas
           </P.MenuLink>
@@ -164,7 +154,6 @@ function Navbar(props) {
             to="/cennik"
             activeStyle
             onMouseOver={props.hoverOnMenuLink}
-            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Cennik
           </P.MenuLink>
@@ -172,7 +161,6 @@ function Navbar(props) {
             to="/kontakt"
             activeStyle
             onMouseOver={props.hoverOnMenuLink}
-            onMouseLeave={props.leaveHoverOnMenuLink}
           >
             Kontakt
           </P.MenuLink>

@@ -23,7 +23,7 @@ export const ParallaxLayer1Price = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   opacity: 70%;
-  
+
   @media screen and (max-width: 1200px) {
     min-height: 280px;
     object-fit: cover;
@@ -31,7 +31,7 @@ export const ParallaxLayer1Price = styled.div`
     background-repeat: no-repeat;
     width: 100%;
   }
-  
+
   @media screen and (max-width: 700px) {
     min-height: 280px;
     object-fit: cover;
@@ -53,7 +53,7 @@ export const ControlHeaderPrice = styled.h3`
   position: relative;
   margin: 0;
   color: ${blackColor};
-  
+
   @media screen and (max-width: 700px) {
     text-align: center;
     font-size: 2.7rem;

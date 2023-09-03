@@ -14,7 +14,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 function App() {
   const [isNavBarHovered, setIsNavBarHovered] = useState(false);
   const [menuLinkRect, setMenuLinkRect] = useState({});
-  const [serviceTitle, setServiceTitle] = useState('null');
+  const [serviceTitle, setServiceTitle] = useState("null");
 
   const handleMouseHover = (event) => {
     const hoveredElement = event.target;
@@ -35,11 +35,11 @@ function App() {
     <>
       <P.AppState>
         <BrowserRouter>
-        <ScrollToTop/>
-        <P.ShortContact onMouseEnter={turnOffListedMenu}>
-          <P.Text>Zadzwoń do nas + 48 508 762 858</P.Text>
-          <P.Text>Napisz do nas: kontakt@smsafetygroup.pl</P.Text>
-        </P.ShortContact>
+          <ScrollToTop />
+          <P.ShortContact onMouseEnter={turnOffListedMenu}>
+            <P.Text>Zadzwoń do nas + 48 508 762 858</P.Text>
+            <P.Text>Napisz do nas: kontakt@smsafetygroup.pl</P.Text>
+          </P.ShortContact>
           <Navbar
             isNavBarHovered={isNavBarHovered}
             hoverOnMenuLink={handleMouseHover}

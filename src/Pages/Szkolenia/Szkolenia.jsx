@@ -23,12 +23,9 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingHyperlink
-                to="/cennik"
-                activeStyle>
+              <P.TrainingHyperlink to="/cennik" activeStyle>
                 Aktualne szkolenia wstępne
-                </P.TrainingHyperlink>
-                
+              </P.TrainingHyperlink>
             </P.TrainingParagraph>
           </P.TrainingOffer>
 
@@ -47,11 +44,9 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingHyperlink
-                to="/cennik"
-                activeStyle>
+              <P.TrainingHyperlink to="/cennik" activeStyle>
                 Aktualne szkolenia okresowe
-                </P.TrainingHyperlink>
+              </P.TrainingHyperlink>
             </P.TrainingParagraph>
           </P.TrainingOffer>
         </P.TrainingBox>
@@ -71,9 +66,7 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingHyperlink
-                to="/cennik"
-                activeStyle>
+              <P.TrainingHyperlink to="/cennik" activeStyle>
                 Aktualne szkolenia P.POZ i pierwszej pomocy
               </P.TrainingHyperlink>
             </P.TrainingParagraph>
@@ -94,9 +87,7 @@ function Szkolenia() {
                 lat praktyki. Dzięki temu dzielą się z kursantami nie tylko
                 profesjonalną wiedzą, ale też własnymi doświadczeniami.
               </P.TrainingText>
-              <P.TrainingHyperlink
-                to="/cennik"
-                activeStyle>
+              <P.TrainingHyperlink to="/cennik" activeStyle>
                 Zapoznaj się z ofertą szkolenia
               </P.TrainingHyperlink>
             </P.TrainingParagraph>

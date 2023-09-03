@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
-import { NavLink as Link } from 'react-router-dom';
+import { NavLink as Link } from "react-router-dom";
 
 export const ServiceCardWrapper = styled.div`
   position: relative;
@@ -43,13 +43,13 @@ export const Header = styled.h1`
   font-size: 3.2rem;
 
   @media screen and (max-width: 1200px) {
-    font-size: 2.1rem;  
+    font-size: 2.1rem;
     margin: 0 10px;
   }
 
   @media screen and (max-width: 700px) {
     line-height: 1.1;
-    font-size: 1.4rem;  
+    font-size: 1.4rem;
   }
 `;
 
@@ -114,7 +114,7 @@ export const ServiceOfferWrapper = styled.div`
   position: relative;
   display: inline-block;
   margin: 30px 100px 0 30px;
-  
+
   @media screen and (max-width: 1200px) {
     display: block;
     padding: 0;
@@ -128,7 +128,7 @@ export const ServiceOffer = styled.ul`
   font-size: 2.1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  
+
   @media screen and (max-width: 700px) {
     line-height: 1.1;
   }

@@ -15,13 +15,17 @@ function AnalizaWypadkowa() {
           <P.CardHeader3>Stacjonarne</P.CardHeader3>
           <P.CardHeader1>od 100zł</P.CardHeader1>
           <P.CardParagraph>Do 15 osób</P.CardParagraph>
-          <P.CardButton>Zamawiam</P.CardButton>
+          <P.CardButtonHyperlink to="/kontakt" activeStyle>
+            Zamawiam
+          </P.CardButtonHyperlink>
         </P.Card>
         <P.Card>
           <P.CardHeader3>On-line</P.CardHeader3>
           <P.CardHeader1>od 90zł</P.CardHeader1>
           <P.CardParagraph>Do 7 osób</P.CardParagraph>
-          <P.CardButton>Zamawiam</P.CardButton>
+          <P.CardButtonHyperlink to="/kontakt" activeStyle>
+            Zamawiam
+          </P.CardButtonHyperlink>
         </P.Card>
       </P.PriceCardWrapper>
     </>

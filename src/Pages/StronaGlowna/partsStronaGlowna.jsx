@@ -29,7 +29,7 @@ export const Header = styled.div`
     font-size: 4.2rem;
     left: 5%;
   }
-  
+
   @media screen and (max-width: 700px) {
     font-size: 2.6rem;
     left: 10px;
@@ -106,6 +106,7 @@ export const OfferItem = styled.div`
   flex-direction: column;
 
   &:hover {
+    box-shadow: 11px -4px 24px -13px rgba(99, 99, 107, 1);
     ${Avatar} {
       transform: scale(1.5);
       color: #47b5ff;
@@ -221,7 +222,6 @@ export const TrustedClientsLogo3 = styled.img`
     padding: 10px;
   }
 `;
-
 
 // Carousel Wrapper with Clients Recommendations//
 

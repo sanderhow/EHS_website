@@ -67,7 +67,7 @@ export const ContactInfoHolder = styled.div`
   @media screen and (max-width: 1200px) {
     margin: 0 20%;
   }
-  
+
   @media screen and (max-width: 700px) {
     margin: 0 10%;
   }
@@ -87,7 +87,6 @@ export const ContactInfoElement = styled.p`
   line-height: 1.8;
 `;
 
-
 export const WrapperContactForm = styled.div`
   max-width: 1270px;
 
@@ -95,4 +94,3 @@ export const WrapperContactForm = styled.div`
     margin: 20px 35px;
   }
 `;
-

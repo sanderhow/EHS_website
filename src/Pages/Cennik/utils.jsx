@@ -29,6 +29,6 @@ export function getCategory(categoryName) {
     case PriceCategory.Nadzor:
       return <NadzorBHP />;
     default:
-      return <SzkoleniaWstepne />;  
+      return <SzkoleniaWstepne />;
   }
 }

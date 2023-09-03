@@ -27,7 +27,7 @@ export const WrapperList = styled.ul`
   font-family: "Alegreya Regular400", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
-  
+
   @media (min-width: 700px) {
     text-align: left;
   }

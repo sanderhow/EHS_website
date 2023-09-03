@@ -71,6 +71,7 @@ export const StyledButton = styled.button`
 
   &:hover,
   &:focus {
+    box-shadow: 5px 0px 24px -8px rgba(27, 27, 29, 1);
     background: #47b5ff;
     color: #fff;
     outline: 0;

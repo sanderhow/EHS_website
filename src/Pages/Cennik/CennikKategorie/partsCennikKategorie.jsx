@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
 
 export const TrainingWrapper = styled.div`
   position: relative;
@@ -9,7 +10,7 @@ export const PriceCardWrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
-  
+
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     align-items: center;
@@ -50,7 +51,7 @@ export const CardParagraph = styled.p`
   color: grey;
 `;
 
-export const CardButton = styled.button`
+export const CardButtonHyperlink = styled(Link)`
   border: none;
   outline: 0;
   padding: 12px;
@@ -60,12 +61,14 @@ export const CardButton = styled.button`
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  text-decoration: none;
 
   &:active {
     color: #000000;
   }
 
   &:hover {
+    box-shadow: 5px 0px 24px -8px rgba(27, 27, 29, 1);
     color: white;
     background-color: #6c8fac;
   }
@@ -73,7 +76,7 @@ export const CardButton = styled.button`
 
 export const PriceCardTitle = styled.div`
   margin: 40px 0 30px 50px;
-  
+
   @media screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;

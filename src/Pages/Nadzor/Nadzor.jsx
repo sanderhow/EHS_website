@@ -1,7 +1,7 @@
 import React from "react";
 import * as P from "./partsNadzor";
 import ParallaxBackground from "../../Components/ParallaxBackground/ParallaxBackground";
-import { messages } from '../../utils/pl';
+import { messages } from "../../utils/pl";
 
 function Nadzor() {
   return (
@@ -10,9 +10,7 @@ function Nadzor() {
 
       <P.Outsourcing>
         <P.OutsourcingHeader>Outsourcing BHP</P.OutsourcingHeader>
-        <P.OutsourcingText>
-          {messages.nadzor.outsourcingText}
-        </P.OutsourcingText>
+        <P.OutsourcingText>{messages.nadzor.outsourcingText}</P.OutsourcingText>
       </P.Outsourcing>
 
       <P.WrapperOutsourcingOffer>

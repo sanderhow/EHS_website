@@ -60,7 +60,9 @@ const StronaGlowna = () => {
       </P.OfferWrapper>
 
       <P.TrustedClients>
-        <P.TrustedClientsHeader>Zaufali nam między innymi</P.TrustedClientsHeader>
+        <P.TrustedClientsHeader>
+          Zaufali nam między innymi
+        </P.TrustedClientsHeader>
         <P.TrustedClientsLogos>
           <P.TrustedClientsLogo1 src="assets/gestamp_logo.png" />
           <P.TrustedClientsLogo2 src="assets/adidas_logo.png" />
@@ -79,7 +81,8 @@ const StronaGlowna = () => {
             <P.CarouselItemParagraph>
               Firma "SM group" dała się poznać jako rzetelny partner
               dostosowujący się do potrzeb naszej firmy i wspierający w
-              przypadku sytuacji niezaplanowanych. "SM group" to profesjonaliści.
+              przypadku sytuacji niezaplanowanych. "SM group" to
+              profesjonaliści.
             </P.CarouselItemParagraph>
             <P.CarouselItemSignature>
               Magdalena Kodybo, Kierownik Serwisu
@@ -89,7 +92,7 @@ const StronaGlowna = () => {
         <CarouselItem>
           <P.CarouselWrapper>
             <P.CarouselAvatarWrapper>
-            <P.CarouselAvatar src="assets/adidas_logo.png" />
+              <P.CarouselAvatar src="assets/adidas_logo.png" />
             </P.CarouselAvatarWrapper>
             <P.CarouselItemParagraph>
               Szkolenia prowadzone są z zaangażowaniem zarówno stacjonarne i
@@ -109,7 +112,8 @@ const StronaGlowna = () => {
             <P.CarouselItemParagraph>
               Jestem bardzo zadowolony ze współpracy z firmą SM group. Nie ma
               problemu z kontaktem i umówieniem spotkania. Bardzo sprawnie i
-              fachowo prowadzą szkolenia. Polecam tę firme i stale korzystam z ich usług.
+              fachowo prowadzą szkolenia. Polecam tę firme i stale korzystam z
+              ich usług.
             </P.CarouselItemParagraph>
             <P.CarouselItemSignature>
               Stanisław Sasim, Kierownik Serwisu

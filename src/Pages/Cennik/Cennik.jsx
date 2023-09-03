@@ -11,7 +11,7 @@ function Cennik() {
       <ParallaxBackground src={"assets/cennik.jpg"} label={"Cennik"} />
 
       <P.PriceButtonsWrapper>
-      <P.PriceButton
+        <P.PriceButton
           isActive={category === PriceCategory.GlownaCennik}
           onClick={() => setCategory(PriceCategory.GlownaCennik)}
         >

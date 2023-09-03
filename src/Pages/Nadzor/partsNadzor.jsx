@@ -67,12 +67,11 @@ export const LeftContainerParagraph = styled.p`
 
 export const RightContainerOutsourcingOffer = styled.div`
   width: 50%;
-  
+
   @media screen and (max-width: 1200px) {
     width: 100%;
   }
 `;
-
 
 export const RightContainerUndorderedList = styled.ul`
   font-family: "Poppins", sans-serif;

@@ -32,7 +32,7 @@ function Uslugi() {
               console.log("No matching DOM element");
           }
         }
-        },
+      },
       {
         threshold: 0.2,
       }
@@ -40,7 +40,6 @@ function Uslugi() {
 
     const rightObserver = new IntersectionObserver(
       ([entry]) => {
-        console.log(`entry:${JSON.stringify(entry,null,4)}`);
         if (entry.isIntersecting) {
           switch (entry.target) {
             case element1.current:
@@ -53,7 +52,7 @@ function Uslugi() {
               console.log("No matching DOM element");
           }
         }
-        },
+      },
       {
         threshold: 0.2,
       }
@@ -64,7 +63,7 @@ function Uslugi() {
     return () => {
       leftObserver.disconnect();
       rightObserver.disconnect();
-    }
+    };
   }, [leftArray, rightArray]);
 
   return (
@@ -75,39 +74,31 @@ function Uslugi() {
           <P.Header>Szkolenia BHP Wstępne</P.Header>
           <P.Paragraph>Stacjonarne</P.Paragraph>
           <P.Paragraph>On-line</P.Paragraph>
-          <P.Hyperlink
-            to="/szkolenia"
-            activeStyle
-          >Dowiedz się więcej</P.Hyperlink>
+          <P.Hyperlink to="/szkolenia" activeStyle>
+            Dowiedz się więcej
+          </P.Hyperlink>
         </P.TextWrapper>
         <P.AvatarWrapper1 ref={element1} isObserved={isObserved1}>
-          <P.AvatarUslugi  src="assets/szkolenia-wstepne.jpg" />
+          <P.AvatarUslugi src="assets/szkolenia-wstepne.jpg" />
         </P.AvatarWrapper1>
       </P.ServiceCardWrapper>
 
       <P.ServiceCardWrapper>
         <P.AvatarWrapper2 ref={element2} isObserved={isObserved2}>
-          <P.AvatarUslugi  
-          src="assets/szkolenia-okresowe.jpg" />
+          <P.AvatarUslugi src="assets/szkolenia-okresowe.jpg" />
         </P.AvatarWrapper2>
         <P.TextWrapper1>
           <P.Header>Szkolenia BHP Okresowe</P.Header>
-          <P.Hyperlink
-            to="/szkolenia"
-            activeStyle
-          >
+          <P.Hyperlink to="/szkolenia" activeStyle>
             Dowiedz się więcej
-            </P.Hyperlink>
+          </P.Hyperlink>
         </P.TextWrapper1>
       </P.ServiceCardWrapper>
 
       <P.ServiceCardWrapper>
         <P.TextWrapper>
           <P.Header>Obsługa BHP</P.Header>
-          <P.Hyperlink
-            to="/nadzor"
-            activeStyle
-          >
+          <P.Hyperlink to="/nadzor" activeStyle>
             Dowiedz się więcej
           </P.Hyperlink>
         </P.TextWrapper>
@@ -122,10 +113,7 @@ function Uslugi() {
         </P.AvatarWrapper2>
         <P.TextWrapper1>
           <P.Header>Obsługa P.POŻ.</P.Header>
-          <P.Hyperlink
-            to="/cennik"
-            activeStyle
-          >
+          <P.Hyperlink to="/cennik" activeStyle>
             Dowiedz się więcej
           </P.Hyperlink>
         </P.TextWrapper1>

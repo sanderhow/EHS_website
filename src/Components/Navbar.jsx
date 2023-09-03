@@ -22,106 +22,27 @@ function Navbar(props) {
   };
 
   useEffect(() => {
-    window.addEventListener("click", handleTurnOffHamburger); 
+    window.addEventListener("click", handleTurnOffHamburger);
     return () => window.removeEventListener("click", handleTurnOffHamburger);
   });
 
   return (
-      <P.PrimaryNav>
-        <P.Logo
-          onClick={handleLogoClicked}
-          src="assets/logo_transparent.png"
-          alt="logo"
-        />
-        <P.HamburgerWrapper ref={hamburgerButton} size={50} onClick={handleClickHamburger}>
-          <P.Hamburger />
-        </P.HamburgerWrapper >
+    <P.PrimaryNav>
+      <P.Logo
+        onClick={handleLogoClicked}
+        src="assets/logo_transparent.png"
+        alt="logo"
+      />
+      <P.HamburgerWrapper
+        ref={hamburgerButton}
+        size={50}
+        onClick={handleClickHamburger}
+      >
+        <P.Hamburger />
+      </P.HamburgerWrapper>
 
-        {isAdditionalMenuOpen && (
-          <P.ListedHamburgerMenu>
-            <P.MenuLink
-              to="/uslugi"
-              activeStyle
-              onMouseOver={props.hoverOnMenuLink}
-            >
-              Usługi
-            </P.MenuLink>
-            <P.MenuLink
-              to="/szkolenia"
-              activeStyle
-              onMouseOver={props.hoverOnMenuLink}
-            >
-              Szkolenia
-            </P.MenuLink>
-            <P.MenuLink
-              to="/nadzor"
-              activeStyle
-              onMouseOver={props.hoverOnMenuLink}
-            >
-              Stały nadzór BHP
-            </P.MenuLink>
-            <P.MenuLink
-              to="/cennik"
-              activeStyle
-              onMouseOver={props.hoverOnMenuLink}
-            >
-              Cennik
-            </P.MenuLink>
-            <P.MenuLink
-              to="/firma"
-              activeStyle
-              onMouseOver={props.hoverOnMenuLink}
-            >
-              O nas
-            </P.MenuLink>
-            <P.MenuLink
-              to="/kontakt"
-              activeStyle
-              onMouseOver={props.hoverOnMenuLink}
-            >
-              Kontakt
-            </P.MenuLink>
-          </P.ListedHamburgerMenu>
-        )}
-
-        <P.Menu>
-          {props.isNavBarHovered && props.serviceTitle === "Usługi" && (
-            <>
-              <P.DropdownMenu
-                onMouseOver={props.hoverListedMenu}
-                onMouseLeave={props.leaveHoverListedMenu}
-                x={props.menuLinkRect.x}
-                y={props.menuLinkRect.y}
-                >
-                  <P.DropdownMenuLink
-                  to="/szkolenia"
-                  activeStyle
-                  >
-                  Szkolenia wstępne
-                  </P.DropdownMenuLink>
-                  <P.DropdownMenuLink
-                  to="/szkolenia"
-                  activeStyle
-                  >
-                  Szkolenia okresowe
-                  </P.DropdownMenuLink>
-                  <P.DropdownMenuLink
-                  to="/nadzor"
-                  activeStyle
-                  >
-                  Outsourcing BHP
-                  </P.DropdownMenuLink>
-                  <P.DropdownMenuLink
-                  to="/cennik"
-                  activeStyle
-                  >
-                  Obsługa BHP
-                  </P.DropdownMenuLink>
-              </P.DropdownMenu>
-              <P.OpacityElement onMouseEnter={props.turnOffListedMenu}/>
-            </>
-          )}
-
+      {isAdditionalMenuOpen && (
+        <P.ListedHamburgerMenu>
           <P.MenuLink
             to="/uslugi"
             activeStyle
@@ -144,18 +65,18 @@ function Navbar(props) {
             Stały nadzór BHP
           </P.MenuLink>
           <P.MenuLink
-            to="/firma"
-            activeStyle
-            onMouseOver={props.hoverOnMenuLink}
-          >
-            O nas
-          </P.MenuLink>
-          <P.MenuLink
             to="/cennik"
             activeStyle
             onMouseOver={props.hoverOnMenuLink}
           >
             Cennik
+          </P.MenuLink>
+          <P.MenuLink
+            to="/firma"
+            activeStyle
+            onMouseOver={props.hoverOnMenuLink}
+          >
+            O nas
           </P.MenuLink>
           <P.MenuLink
             to="/kontakt"
@@ -164,8 +85,75 @@ function Navbar(props) {
           >
             Kontakt
           </P.MenuLink>
-        </P.Menu>
-      </P.PrimaryNav>
+        </P.ListedHamburgerMenu>
+      )}
+
+      <P.Menu>
+        {props.isNavBarHovered && props.serviceTitle === "Usługi" && (
+          <>
+            <P.DropdownMenu
+              onMouseOver={props.hoverListedMenu}
+              onMouseLeave={props.leaveHoverListedMenu}
+              x={props.menuLinkRect.x}
+              y={props.menuLinkRect.y}
+            >
+              <P.DropdownMenuLink to="/szkolenia" activeStyle>
+                Szkolenia wstępne
+              </P.DropdownMenuLink>
+              <P.DropdownMenuLink to="/szkolenia" activeStyle>
+                Szkolenia okresowe
+              </P.DropdownMenuLink>
+              <P.DropdownMenuLink to="/nadzor" activeStyle>
+                Outsourcing BHP
+              </P.DropdownMenuLink>
+              <P.DropdownMenuLink to="/cennik" activeStyle>
+                Obsługa BHP
+              </P.DropdownMenuLink>
+            </P.DropdownMenu>
+            <P.OpacityElement onMouseEnter={props.turnOffListedMenu} />
+          </>
+        )}
+
+        <P.MenuLink
+          to="/uslugi"
+          activeStyle
+          onMouseOver={props.hoverOnMenuLink}
+        >
+          Usługi
+        </P.MenuLink>
+        <P.MenuLink
+          to="/szkolenia"
+          activeStyle
+          onMouseOver={props.hoverOnMenuLink}
+        >
+          Szkolenia
+        </P.MenuLink>
+        <P.MenuLink
+          to="/nadzor"
+          activeStyle
+          onMouseOver={props.hoverOnMenuLink}
+        >
+          Stały nadzór BHP
+        </P.MenuLink>
+        <P.MenuLink to="/firma" activeStyle onMouseOver={props.hoverOnMenuLink}>
+          O nas
+        </P.MenuLink>
+        <P.MenuLink
+          to="/cennik"
+          activeStyle
+          onMouseOver={props.hoverOnMenuLink}
+        >
+          Cennik
+        </P.MenuLink>
+        <P.MenuLink
+          to="/kontakt"
+          activeStyle
+          onMouseOver={props.hoverOnMenuLink}
+        >
+          Kontakt
+        </P.MenuLink>
+      </P.Menu>
+    </P.PrimaryNav>
   );
 }
 

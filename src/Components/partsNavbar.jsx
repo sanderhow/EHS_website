@@ -1,6 +1,6 @@
-import { FaBars } from 'react-icons/fa'
-import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
+import { FaBars } from "react-icons/fa";
+import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
 
 export const PrimaryNav = styled.nav`
   z-index: 1;
@@ -15,9 +15,9 @@ export const PrimaryNav = styled.nav`
   top: 0;
   justify-content: space-between;
   font-size: 1.1rem;
-  font-family: 'Alegreya Regular400', sans-serif;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2); 
-`
+  font-family: "Alegreya Regular400", sans-serif;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+`;
 
 export const MenuLink = styled(Link)`
   color: black;
@@ -34,10 +34,10 @@ export const MenuLink = styled(Link)`
 
   &:hover {
     color: white;
-    background-color: #47b5ff;;
+    background-color: #47b5ff;
     border-radius: 0px;
   }
-`
+`;
 
 export const DropdownMenuLink = styled(Link)`
   color: black;
@@ -60,19 +60,19 @@ export const DropdownMenuLink = styled(Link)`
     bottom: 10px;
     transition: 0.2s;
   }
-`
+`;
 
 export const OpacityElement = styled.div`
   background-color: black;
   z-index: -1;
   height: 100vh;
   width: 100%;
-  opacity: 0.6; 
+  opacity: 0.6;
   background-size: cover;
   position: absolute;
   top: 110px;
   left: 0px;
-`
+`;
 
 export const DropdownMenu = styled.div`
   height: 160px;
@@ -82,10 +82,10 @@ export const DropdownMenu = styled.div`
   top: 110px;
   position: absolute;
   left: ${(props) => props.x - 130}px;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   text-align: center;
-`
+`;
 
 export const HamburgerWrapper = styled.div`
   display: none;
@@ -94,18 +94,18 @@ export const HamburgerWrapper = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  
+
   @media screen and (max-width: 1024px) {
     display: flex;
     cursor: pointer;
   }
-`
+`;
 
 export const Hamburger = styled(FaBars)`
   color: black;
   font-size: 1.9rem;
   z-index: -1;
-`
+`;
 
 export const ListedHamburgerMenu = styled.div`
   height: 300px;
@@ -118,37 +118,37 @@ export const ListedHamburgerMenu = styled.div`
   top: 110px;
   position: absolute;
   border-radius: 0 0 0 20px;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 
   @media screen and (max-width: 1024px) {
     right: 0px;
   }
-  
+
   @media screen and (max-width: 702px) {
     border-radius: 0 0 0 30px;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
   }
-`
+`;
 
 export const Menu = styled.div`
   display: flex;
   padding: 20px 20px;
   margin-right: 25px;
-  
+
   @media screen and (max-width: 1024px) {
-    display: none
+    display: none;
   }
-`
+`;
 
 export const Logo = styled.img`
   border-radius: 50%;
   padding-left: 20px;
   width: 150px;
   height: 150px;
-  
+
   @media screen and (max-width: 1024px) {
     width: 128px;
     height: 134px;
   }
-`
+`;

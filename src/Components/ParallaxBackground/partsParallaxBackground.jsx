@@ -11,6 +11,9 @@ export const ParallaxWrapperPrice = styled.div`
   @media screen and (max-width: 1200px) {
     min-height: 280px;
   }
+  @supports (-webkit-touch-callout: none) {
+    background-attachment: scroll;
+  }
 `;
 
 export const ParallaxLayer1Price = styled.div`
@@ -39,6 +42,13 @@ export const ParallaxLayer1Price = styled.div`
     background-repeat: no-repeat;
     width: 100%;
   }
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    background-attachment:scroll;
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 `;
 
 export const ParallaxLayer2Price = styled.div`
